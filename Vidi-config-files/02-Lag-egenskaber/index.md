@@ -36,11 +36,15 @@ Herunder findes input til Meta for laget "region". Du kan copy/paste dem ind og 
 
 #### Accordion summery prefix:
 
+Anvendes i forbindelse med config-indstillingen `"crossMultiSelect": true`   
+
 ```
 Regioner
 ```
 
 #### Accordion summery:
+
+Anvendes i forbindelse med config-indstillingen `"crossMultiSelect": true`    
 
 ```
 regionnavn
@@ -55,8 +59,8 @@ regionnavn
    "color": "green",
    "weight": 4,
    "fillColor": "green",
-   "opacity": 0.2,
-   "fillOpacity": 0.8,
+   "opacity": 0.8,
+   "fillOpacity": 0.2,
    "dashSpeed": 5
 }
 ```

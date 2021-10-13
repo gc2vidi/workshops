@@ -21,8 +21,7 @@ Config-filer skrives i [JSON formatet](https://en.wikipedia.org/wiki/JSON) som e
 ```json
 {
     "schemata": [
-        "public",
-        "tag:workshop"
+        "workshop"
     ],
     "brandName": "Workshop",
     "aboutBox": "Workshop demo"
@@ -43,7 +42,7 @@ Der er en lang række indstillinger, som kan skrives ind i en config. Den samled
 - Sæt `schemata` så nogle lag loades.
 - Prøv at sætte forskellige indstillinger og se hvordan Vidi reagerer.
 
-Dette er en samlet config som du kan copy/paste fra:
+Dette er en samlet config som du kan copy/paste fra. Bemærk `schemata`, hvor der bruges en tag, så du skal huske at tagge dine lag med `workshop`. Schamaet `public` er medtaget for at have et start-udsnit. 
 
 ```json
 {
@@ -52,8 +51,8 @@ Dette er en samlet config som du kan copy/paste fra:
         "tag:workshop"
     ],
     "activeLayers": [
-        "public.region",
-        "public.kommune"
+        "workshop.region",
+        "workshop.kommune"
     ],
     "enabledExtensions": [
         "conflictSearch",

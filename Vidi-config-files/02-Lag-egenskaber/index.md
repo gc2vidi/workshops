@@ -26,7 +26,7 @@ Herunder findes input til Meta for laget "region". Du kan copy/paste dem ind og 
 
 #### Pop-up template:
 
-```handlebars
+```
 <h3>Dette er {{regionnavn}}</h3>
 {{#if regionkode}}Den har kode {{regionkode}}{{/if}}
 ```
@@ -50,10 +50,10 @@ regionnavn
 ```json
 {
    "color": "green",
-   "weight": 2,
-   "fillColor": "red",
-   "opacity": 0,
-   "fillOpacity": 0.5,
+   "weight": 4,
+   "fillColor": "green",
+   "opacity": 0.2,
+   "fillOpacity": 0.8,
    "dashSpeed": 5
 }
 ```

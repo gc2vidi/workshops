@@ -1,4 +1,4 @@
-# Vidi config-filer og lag-/felt-egenskaber workshop
+# Vidi config-filer og lag-/felt-indstillinger workshop
 
 [Modul 00](00-Intro) Intro  
 [Modul 01](01-Config-filer) Config-filer  

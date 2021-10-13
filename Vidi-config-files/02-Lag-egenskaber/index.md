@@ -142,7 +142,7 @@ function(feature){
 ```json
 [
     {
-        "rel": "workshop2.kommune",
+        "rel": "workshop.kommune",
         "parent_column": "regionkode",
         "child_column": "regionkode"
     }

@@ -26,7 +26,7 @@ Herunder findes input til Meta for laget "region". Du kan copy/paste dem ind og 
 
 #### Pop-up template:
 
-```
+```handlebars
 <h3>Dette er {{regionnavn}}</h3>
 {{#if regionkode}}Den har kode {{regionkode}}{{/if}}
 ```

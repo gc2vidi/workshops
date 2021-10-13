@@ -123,9 +123,13 @@ function(feature){
 
 #### Template:
 
+{% raw %}
+
 ```handlebars
 {{regionnavn}}
 ```
+{% endraw %}
+
 
 ### References
 

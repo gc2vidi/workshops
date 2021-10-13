@@ -52,7 +52,7 @@ Dette er en samlet config som du kan copy/paste fra. Bemærk `schemata`, hvor de
     ],
     "activeLayers": [
         "workshop.region",
-        "workshop.kommune"
+        "workshop.navne_p"
     ],
     "enabledExtensions": [
         "conflictSearch",
@@ -76,8 +76,7 @@ Dette er en samlet config som du kan copy/paste fra. Bemærk `schemata`, hvor de
     "baseLayers": [
         {
             "id": "osm",
-            "name": "Open Street Map",
-            "minZoom": 8
+            "name": "Open Street Map"
         },
         {
             "type": "XYZ",

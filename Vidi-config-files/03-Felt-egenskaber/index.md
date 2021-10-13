@@ -14,7 +14,9 @@ En gennemgang af alle felt indstillinger for Vidi kan ses [her](https://vidi.rea
 
 - Indsæt Meta egenskaber for et lag og se hvordan laget i Vidi reagerer.
 
-Herunder findes input til felter for laget `navne_p`. Du kan copy/paste dem ind og evt. lave dine egne justeringer.
+Herunder findes input til felter for laget `navne_p`. Du kan copy/paste dem ind og evt. lave dine egne justeringer. 
+
+> Note: JSON her strengene skal anvende single-qoutes ' og ikke double-qoutes ". Der erbejdes på at double også kan anvendes.
 
 * I feltet `feat_type` indsæt i `Egenskaber` tegnet `*` og se, at der kommer en drop-down vælger i filter og editering.
 

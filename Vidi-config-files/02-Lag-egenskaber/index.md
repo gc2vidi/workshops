@@ -14,7 +14,7 @@ Meta formularen indeholder en række input-felter, som styrer hvordan Vidi hånd
 
 ## Meta egenskaber for Vidi
 
-En gennemgang af alle Meta egenskaber for Vidi kan ses [her](https://vidi.readthedocs.io/en/latest/pages/standard/92_gc2_meta_information.html#gc2-meta-information)
+En gennemgang af alle Meta egenskaber for Vidi kan ses [her](https://vidi.readthedocs.io/da/latest/pages/standard/92_gc2_meta_information.html#gc2-meta-information)
 
 ## Øvelser
 

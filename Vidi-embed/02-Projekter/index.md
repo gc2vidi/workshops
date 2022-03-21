@@ -24,6 +24,6 @@ Er man logget ind i Vidi kan projektet gemmes under ens bruger-profil. På denne
 - Log ind og opret et bruger projekt.
 - Prøv at flytte det lokale projekt til et bruger projekt.
 
-[Dokumentation af Projekter](https://vidi.readthedocs.io/en/latest/pages/standard/06_project.html)
+[Dokumentation af Projekter](https://vidi.readthedocs.io/da/latest/pages/standard/06_project.html)
 
 

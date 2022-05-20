@@ -32,7 +32,7 @@ JSON editoren i GC2 hjælper med at påpege evt. fejl i syntax'en.
 
 ## Mulige indstillinger i en config
 
-Der er en lang række indstillinger, som kan skrives ind i en config. Den samlede liste kan ses [her](https://vidi.readthedocs.io/en/latest/pages/standard/91_run_configuration.html)
+Der er en lang række indstillinger, som kan skrives ind i en config. Den samlede liste kan ses [her](https://vidi.readthedocs.io/da/latest/pages/standard/91_run_configuration.html)
 
 > Note: Hvis en instilling IKKE sættes i en config, bruges den som er sat i system config'en, som kan være variere mellem forskellige Vidi installationer.
 

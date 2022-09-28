@@ -1,6 +1,6 @@
 # Tooltip, Clustering, Min- og Max zoom level
 
-Der er fire yderligere settings man sætte på sit vektorlag:
+Der er fire yderligere indstillinger man sætte på sit vektorlag:
 
 1. Clustering
 2. Tooltip
@@ -12,7 +12,8 @@ Der er fire yderligere settings man sætte på sit vektorlag:
 ## 1) Clustering
 
 Når slået til bliver punkterne samlet i "clusters", hvis de er nærmere end 100 pixels på hinanden.
-På den måde kan kortet indeholde et stort antal punkter, da alle ikke ses på samme tid. Cluster stilarten skal sættes
+På den måde kan kortet indeholde et stort antal punkter, da alle ikke ses på samme tid. Det giver også et bedre overblik
+over mange punkter. Cluster stilarten skal sættes
 gennem css.
 
 ## 2) Tooltip

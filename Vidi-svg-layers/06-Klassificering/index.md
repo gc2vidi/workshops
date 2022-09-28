@@ -75,12 +75,12 @@ function (feature, latlng) {
     var icon, color, shape;
     switch (feature.properties.facil_ty_k) {
         case 1222:
-            icon = 'fa-tint';
+            icon = 'fas-faucet';
             color = 'blue';
             shape = 'circle'
             break;
         case 1122:
-            icon = 'fa-biking';
+            icon = 'fas-biking';
             color = 'orange';
             shape = 'penta'
             break;

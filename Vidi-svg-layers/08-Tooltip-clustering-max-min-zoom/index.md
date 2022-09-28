@@ -5,7 +5,7 @@ Der er fire yderligere settings man sætte på sit vektorlag:
 2. Tooltip
 3. Min og max zoom level
 
-![Tooltip](../assets/clustering.png)
+![Tooltip](../assets/clustering.png)   
 ![Tooltip](../assets/tooltip.png)
 
 ## 1) Clustering

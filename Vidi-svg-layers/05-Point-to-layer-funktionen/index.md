@@ -9,7 +9,7 @@ Der er to former for markører:
 1. CircleMarker
 2. Icon
 
-1) En circleMarker er et cirkelslag med punktet i centrum og en radius. En CircleMarker kan styles på samme måde som
+**1)** En circleMarker er et cirkelslag med punktet i centrum og en radius. En CircleMarker kan styles på samme måde som
    polygoner, som vi så i `04 Style funktionen`. Hvis der ikke sættes nogen Point-to-layer funktion bliver følgende
    anvendt.
 
@@ -21,7 +21,7 @@ function (feature, latlng) {
 
 Man bør ikke indsætte ovenstående, men blot lade Point-to-layer stå tom, hvis man ønsker circleMarkers.
 
-2) Icons er et stykke web grafik, som bliver sat ind hvor punktet er. Typisk anvendes det indbyggede "ExtraMarkers"
+**2)** Icons er et stykke web grafik, som bliver sat ind hvor punktet er. Typisk anvendes det indbyggede "ExtraMarkers"
    bibliotek eller man henviser til egne SVG symboler. Men en markør kan også være et stykke brugerdefineret html.
 
 ## ExtraMarkers
@@ -54,7 +54,7 @@ green-dark', 'green', 'green-light', 'black', 'white'
 
 ![ExtraMarkers](../assets/awesome-markers.png)
 
-## Eget image
+## Remote image
 
 Man kan også sætte et sit image ind som markør. Her er det et SVG image hosted på Github:
 

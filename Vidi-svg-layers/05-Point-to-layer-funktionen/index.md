@@ -91,8 +91,6 @@ function (feature, latlng) {
 `html` kan være hvilken som helst html. Det er også muligt at sætte `className` så en brugerdefineret css regel kan
 tilknyttes.
 
-## CircleMarker
-
 ## Øvelse
 
 Indsæt en Point-to-layer funktion i et punktlag. Prøv at ændre på nogle egenskaber.

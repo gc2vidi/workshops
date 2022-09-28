@@ -26,7 +26,7 @@ Dataene består af:
 * t_5802_fac_li.shp
 * t_5800_fac_pkt.shp
 
-Alle datasæt skal uploades med EPSG:25832 og med encoding UTF8. Ved upload af `t_5800_fac_pkt.shp` så vælg `Point` i Type, da `Auto` vil resultere i Multi-Point (det er kun væsentligt for punktlaget da vi skal lave clusters).
+Alle datasæt skal uploades med EPSG:25832 og med encoding UTF8.   
 
 [Denne Vidi instans](https://vidi.swarm.gc2.io/app/demo/workshop/) med de tre lag kan anvendes til flere af øvelserne.
 

@@ -46,13 +46,13 @@ Det er kun farven, der ændres i de forskellige klasser, så man kan gøre det l
 function (feature) {
     var color;
     switch (feature.properties.facil_ty_k) {
-        case '2041':
+        case 2041:
             color = 'ForestGreen';
             break;
-        case '2111':
+        case 2111:
             color = 'YellowGreen';
             break;
-        case '3071':
+        case 2121:
             color = 'ForestGreen';
             break;
     }

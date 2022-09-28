@@ -1,15 +1,15 @@
 # Klassificering
 
-Indtil nu har vi anvendt én stilart på alle objekter. Men det er muligt at returnere forskellige stilart ud fra objektet
-attributværdier.
+Indtil nu har vi anvendt én stilart på alle objekter. Men det er muligt at returnere forskellige stilarter ud fra
+objektet attribut-værdier.
 
 Følgende er en unik klassificering af laget `t_5801_fac_fl` med feltet `facil_ty_k` bruges (bemærk at stien i feltet
-er `feature.properties.facil_ty_k)
+er `feature.properties.facil_ty_k`)
 
 ```javascript
 function (feature) {
     switch (feature.properties.facil_ty_k) {
-        case '2041':
+        case 2121:
             return {
                 color: 'ForestGreen',
                 weight: 2,
@@ -18,7 +18,7 @@ function (feature) {
                 fillOpacity: 0.5
             }
             break;
-        case '2111':
+        case 2111:
             return {
                 color: 'YellowGreen',
                 weight: 2,
@@ -27,12 +27,12 @@ function (feature) {
                 fillOpacity: 0.5
             }
             break;
-        case '3071':
+        case 2171:
             return {
-                color: 'BlueViolet',
+                color: 'DarkSeaGreen',
                 weight: 2,
                 opacity: 0.8,
-                fillColor: 'BlueViolet',
+                fillColor: 'DarkSeaGreen',
                 fillOpacity: 0.5
             }
             break;
@@ -46,14 +46,14 @@ Det er kun farven, der ændres i de forskellige klasser, så man kan gøre det l
 function (feature) {
     var color;
     switch (feature.properties.facil_ty_k) {
-        case 2041:
+        case 2121:
             color = 'ForestGreen';
             break;
         case 2111:
             color = 'YellowGreen';
             break;
-        case 2121:
-            color = 'ForestGreen';
+        case 2171:
+            color = 'DarkSeaGreen';
             break;
     }
     return {

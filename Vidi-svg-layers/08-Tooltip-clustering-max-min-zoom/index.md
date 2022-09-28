@@ -9,13 +9,13 @@ Der er fire yderligere settings man sætte på sit vektorlag:
 ![Tooltip](../assets/tooltip.png)
 
 ## 1) Clustering
-Clustering fungerer kun på single part point lag (Dvs. ikke på multipoint). Når slået til bliver punkterne samlet i "clusters" hvis de er nærmere end 100 pixels på hinanden. 
+Clustering fungerer kun på single-part-point-lag (Dvs. ikke på multipoint). Når slået til bliver punkterne samlet i "clusters", hvis de er nærmere end 100 pixels på hinanden. 
 På den måde kan kortet indeholde et stort antal punkter, da alle ikke ses på samme tid. Cluster stilarten skal sættes gennem css.
 
 ## 2) Tooltip
 Hvis der angives en tooltip template får hver vektorfeature et tooltip/label med værdien. Templaten har adgang til alle attributter i objektet.   
 
-```handlebars
+```
 {{navn}}
 ```
 

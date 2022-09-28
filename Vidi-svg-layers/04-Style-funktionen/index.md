@@ -1,7 +1,7 @@
 # Style funktionen
 Et vektorlag dannes gennem en funktion. Man skal forestille sig, at hver feature (geometri og attributter) i laget bliver sendt til en funktion. Funktion returnere en stilart, som det enkelte objekt får.
 
-Som udgangspunkt er der en style funktion, som giver vektorlag en blå farve som vi så lige før.
+Som standard er der sat en style funktion, som giver vektorlag en blå farve som vi så lige før.
 
 Style funktionen kan sættes i GC2 og når Vidi starter bliver funktionen hentet, så den kan bruges sammen med laget. Det er også muligt at sætte style funktionen i Vidi, så Vidi brugeren selv kan bestemme, hvordan et vektorlag skal styles - men mere om det senere.
 
@@ -47,7 +47,7 @@ Indsæt ovenstående funktion i Meta > Vector settings > Style function
 
 ![Max features opsætning](../assets/style-function.png)
 
-Ændre på værdier og se hvad, der sker. Husk at Vidi skal refreshes, når ændringer gennems i GC2.
+Ændre på værdier og se hvad, der sker. Husk, at Vidi skal refreshes, når ændringer gemmes i GC2.
 
 [Video af ændring af Style funktionen ](https://vimeo.com/754616134)
 

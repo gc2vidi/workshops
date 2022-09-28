@@ -33,3 +33,5 @@ I denne config sættes embed.tmpl og der sættes egenskaber for tabellens placer
 1. Klik 'Show table' af i Meta > Vector settings for laget `t_5802_fac_li`.
 2. Opret en ny config med ovenstående indhold (tilret evt. schemata) eller bruge [denne](https://vidi.swarm.gc2.io/app/demo/?config=/api/v2/configuration/demo/configuration_workshop_vektorlag_63343602b018f795780615.json) 
 3. Tænd laget `t_5802_fac_li` og sæt filter `rute_ty_k = 3` (det er cykelruter)
+
+![Kort med tabel](../assets/table-map.png)

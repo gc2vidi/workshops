@@ -10,12 +10,12 @@ Så hver gang en Vidi bruger tænder og zoomer rundt i lag, vil der blive dannet
 Så ulemperne kan opsummeres således:
 
 * Kræver en del netværkstrafik og processerkraft og kan ikke opskaleres uden tilsvarende opskalering af ressourcer.
-* styling er fastsat central i GC2 og kan ikke ændres af Vidi brugeren - alle får den samme styling af et givet lag.
-* Rasterlag er "døde" billder, og feature-info, mouse-over og editering kræver yderligere kald til GC2 og databasen.
+* Styling er fastsat centralt i GC2 og kan ikke ændres af Vidi brugeren - alle får den samme styling af et givet lag.
+* Rasterlag er "døde" billeder, og feature-info, mouse-over og editering kræver yderligere kald til GC2 og databasen.
 
 Men rasterlag har også en række fordele:
 
-* Kan hurtigt visualiserer store mnægder data. Det er intet problem at skabe et billede af en million punkter.
+* Kan hurtigt visualiserer store mængder data. Det er intet problem at skabe et billede af en million punkter.
 * Kan skabe meget avanceret styling og labels.
 * Stiller ingen krav til Vidi brugerens computer, da denne bare viser billedet af data (det er lige meget om det indeholder 10 eller en million punkter).
 

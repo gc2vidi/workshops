@@ -1,7 +1,7 @@
 # Hvordan virker vektorlag
 Til forskel fra rasterlag, hvor et PNG billede af data sendes til Vidi, bliver selve dataene sendt i rå udgave til Vidi. Her i Vidi bliver laget så dannet som et "billede" i SVG format.
 SVG står for Scalable Vector Graphic og et vektorbaseret billedformat, som browsere kan håndtere. Når først SVG billedet er dannet kan Vidi brugeren zoome rundt uden, at der skal hentes nye data fra GC2.
-Det betyder, at presset på GC2/databasen er betydelig mindre end ved rasterlag. Tilgengæld er det ude i brugernes browsere arbejdet sker.
+Det betyder, at presset på GC2/databasen er betydelig mindre end ved rasterlag. Til gengæld er det ude i brugernes browsere arbejdet sker.
 
 Fordele ved vektorlag:
 * Data hentes én gang fra GC2 hvorefter ingen yderligere requests bliver sendt. Heller ikke ved feature-info og mouse-over.

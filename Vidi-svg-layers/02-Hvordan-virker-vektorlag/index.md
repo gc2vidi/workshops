@@ -13,5 +13,5 @@ Fordele ved vektorlag:
 
 Men vektorlag har også nogle ulemper:
 * Er ikke veleget til store mængder data. Alle data skal først flyttes fra GC2 til Vidi og SVG billedet bliver meget tungt.
-* Ingen advanceret styling og labels. Styling er begrænset af SVG standarden og det underlæggende Leaflet framework.
+* Ingen avanceret styling og labels. Styling er begrænset af SVG standarden og det underliggende Leaflet framework.
 * Klassificering sker vha. JavaScript og kan derfor være noget svær at håndtere.

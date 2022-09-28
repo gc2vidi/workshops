@@ -1,5 +1,5 @@
 # Style funktionen
-Et vektorlag dannes gennem en funtion. Man skal forestille sig, at hver feature (geometri og attributer) i laget bliver sendt til en funktion. Funktion returnere en style, som det enkelte objekt får.
+Et vektorlag dannes gennem en funktion. Man skal forestille sig, at hver feature (geometri og attributter) i laget bliver sendt til en funktion. Funktion returnere en stilart, som det enkelte objekt får.
 
 Som udgangspunkt er der en style funktion, som giver vektorlag en blå farve som vi så lige før.
 

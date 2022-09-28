@@ -1,7 +1,7 @@
 # Klassificering
 
 Indtil nu har vi anvendt én stilart på alle objekter. Men det er muligt at returnere forskellige stilarter ud fra
-objektet attribut-værdier.
+objektets attribut-værdier.
 
 Følgende er en unik klassificering af laget `t_5801_fac_fl` med feltet `facil_ty_k` bruges (bemærk at stien i feltet
 er `feature.properties.facil_ty_k`)

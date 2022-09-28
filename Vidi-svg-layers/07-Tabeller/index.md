@@ -1,5 +1,5 @@
 # Tabeller
-Det er muligt at få den lagets data vist i en tabel sammen med kortet.
+Det er muligt at få lagets data vist i en tabel sammen med kortet.
 
 Det gøres ved at klikke 'Show table' af i Meta > Vector settings:
 

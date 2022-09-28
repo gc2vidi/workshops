@@ -56,7 +56,7 @@ green-dark', 'green', 'green-light', 'black', 'white'
 
 ## Remote image
 
-Man kan også sætte sit et remote image ind som markør. Her er det et SVG image hosted på Github:
+Man kan også sætte et remote image ind som markør. Her er det et SVG image hosted på Github:
 
 ```javascript
 function (feature, latlng) {

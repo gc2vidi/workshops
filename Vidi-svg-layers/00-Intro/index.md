@@ -12,7 +12,7 @@ Så når termerne benyttes i denne workshop, handler det udelukkede om hvilken m
 ## Forudsætninger
 For at kunne gennemføre denne workshop kræves adgang til GC2/Vidi.
 
-Du kan anvende denne [GC2/Vidi installation](https://swarm.gc2.io/) hvor du kan oprette en database og uploade workshoppens [tre datasæt](https://github.com/mapcentia/workshops/raw/main/Vidi-svg-layers/data/data.zip)
+Du kan anvende denne [GC2/Vidi installation](https://swarm.gc2.io/) hvor du kan oprette en database og uploade workshoppens [tre datasæt](https://github.com/gc2vidi/workshops/raw/main/Vidi-svg-layers/data/data.zip)
 
 Dataene skal unzippes før upload til GC2.
 

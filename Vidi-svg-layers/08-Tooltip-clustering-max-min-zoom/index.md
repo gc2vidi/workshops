@@ -21,9 +21,11 @@ gennem css.
 Hvis der angives en tooltip template får hver vektorfeature et tooltip/label med værdien. Templaten har adgang til alle
 attributter i objektet.
 
-```
+{% raw %}
+```handlebars
 {{navn}}
 ```
+{% endraw %}
 
 ## 3) Min og max zoom level
 

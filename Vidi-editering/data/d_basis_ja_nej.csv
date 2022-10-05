@@ -1,0 +1,5 @@
+ja_nej_kode;ja_nej;aktiv;begrebsdefinition
+0;"Nej";1;"NEJ"
+1;"Ja";1;"JA"
+2;"Blandet";1;"Hvor både ja og nej gælder for objektet"
+3;"Ukendt";1;"Mangler viden til at kunne udfylde værdien med ja eller nej."

@@ -8,7 +8,7 @@ Som standard er lag i GC2 opsat til kun at blive vist som rasterlag i Vidi. Som 
 
 
 ## Øvelse
-Start med at upload de tre Shape Files. Alle datasæt skal uploades som EPSG:25832 med encoding UTF8. Ved upload af `t_5800_fac_pkt.shp` vælg `Point` i Type, da `Auto` vil resultere i Multi-Point.
+Start med at upload de tre Shape Files. Alle datasæt skal uploades som EPSG:25832 med encoding UTF8.    
 
 Derefter placer lagene i en gruppe og klik `vector` af i Meta > Layer type.
 

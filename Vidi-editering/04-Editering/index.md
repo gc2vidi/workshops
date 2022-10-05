@@ -7,7 +7,7 @@ Alt efter om man vil indsætte en feature eller opdatere/slette en eksisterende 
 1. Tænd laget, som du vil indsætte ind.
 2. Klik på plus-ikonet.
 3. Alt efter laget er punkt, linje eller flade kan du nu plotte et punkt, linje eller flade. De sidstnævnte afsluttes
-   ved at klikke en gang til på det sidst satte punkt.
+   ved at klikke en gang til på det sidst plottet punkt.
 4. Attribut formularen udfyldes.
 5. Der klikkes på `SUBMIT` knappen nederst på formularen for at afslutte oprettelsen.
 
@@ -37,13 +37,12 @@ editere. Vælges det sidste vil transaktionskøen ikke løbende bliver afviklet,
 
 ## Offline mode
 
-Hvis der ikke er netværk, vil transaktionskøen ikke blive afviklet. Man kan også vælge at sætte et lag i vektor-udgave "
-offline". I dette
-tilfælde vil transaktionskøen ikke løbende blive afviklet. Faktisk vil køen slette ikke prøve af forbinde til GC2 -
-heller ikke hvis laget slukkes/tændes. Det kan anvendes i disse situationer:
+Hvis der ikke er netværk, vil transaktionskøen ikke blive afviklet. Man kan også vælge at sætte et lag i vektor-udgave
+"offline mode". I dette tilfælde vil transaktionskøen ikke løbende blive afviklet. Faktisk vil køen slette ikke prøve af
+forbinde til GC2 - heller ikke hvis laget slukkes/tændes. Det kan anvendes i disse situationer:
 
-1. Hvis laver en række ændringer over tid, men ønsker de først bliver sendt til GC2/databasen når alle er lavet.
-2. Hvis er ude i marken og har meget svag netværksforbindelse og køen "hænger". Så kan man vente til, at man har bedre
+1. Hvis laver en række ændringer over tid men ønsker, at de først bliver sendt til GC2/databasen når alle er lavet.
+2. Hvis man er ude i marken og har meget svag netværksforbindelse og køen "hænger". Så kan man vente til, at man har bedre
    forbindelse og afvikle køen.
 
 ![Offline mode](../assets/offlinemode.png)
@@ -53,6 +52,8 @@ heller ikke hvis laget slukkes/tændes. Det kan anvendes i disse situationer:
 Prøv at editere et lag i både raster og vektor udgave. Prøv også at være både logget ud og ind.
 
 I vektor-udgave prøv at sætte laget i offline-mode og lave editeringer. Skift tilbage til online mode og se køen blive
-afviklet.
+afviklet.  
+
+
 
 

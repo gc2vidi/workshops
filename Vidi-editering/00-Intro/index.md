@@ -36,16 +36,12 @@ Dataene består af disse geometri datasæt:
 
 Alle ovenstående datasæt skal uploades med EPSG:25832 og med encoding UTF8. `vejmidte_brudt.zip` skal ikke udpakkes før upload, da den fylder en del. 
 
-Derudover er der disse ikke-geometri datasæt:
+Derudover er der disse datasæt uden geometri:
 
 * d_5800_facilitet.csv
-* d_5800_saeson.csv
-* d_5802_rute_uty.csv
-* d_5802_rutetype.csv
 * d_basis_ansvarlig_myndighed.csv
 * d_basis_ja_nej.csv
-* d_basis_status.csv
 
-Disse datasæt uploades med encoding UTF8. EPSG koden er underordnet da de ikke indeholder geometri.
+Disse datasæt uploades med encoding UTF8. EPSG koden er underordnet da de ikke indeholder geometrier.
 
 

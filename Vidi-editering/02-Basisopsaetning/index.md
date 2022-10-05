@@ -3,12 +3,14 @@
 Editeringsfunktionaliteten kommer gennem en extension kaldet `editor`. Når denne er aktiveret i en config, kan lag
 editeres. Dog skal de enkelt lag have editering aktiveret gennem Meta funktionen.
 
+[Manual for Editor indstillingen i Meta](https://vidi.readthedocs.io/da/latest/pages/standard/92_gc2_meta_information.html#editor)
+
 I fleste tilfælde skal brugeren have rettigheder til at ændre på et lag, så `session` extension skal også være
 aktiveret, således brugeren kan logge sig ind.
 
 ## Øvelse
 
-1. Start med at upload datasættene. Evt. til et schama kaldet `workshop`. Alle data skal uploades med encoding UTF8 og
+1. Start med at upload datasættene. Opret et schama kaldet `workshop` til det. Alle data skal uploades med encoding UTF8 og
    EPSG:25832 (csv filerne indeholder ikke geometri, så her er EPSG underordnet).
 2. Opret en ny config i Kontrolcenter med følgende indhold:
 
@@ -32,7 +34,7 @@ aktiveret, således brugeren kan logge sig ind.
 
 ![Layertype i Meta](../assets/layertype.png)
 
-5. Placer alle geometri-lag i grupper og søg for at `Write` er sat i `Authentication`.
+5. Placer alle geometri-lag i grupper og søg for at `Authentication` er sat til `Write`.
 
 ![Grupper](../assets/groups.png)
 

@@ -2,21 +2,28 @@
 
 Attribut formularen bliver dannet ud fra typerne i PostGIS tabellen.
 
-Fx bliver et `timestamp` felt til en datovælger i formularen og et `bolean` felt bliver til en tjek-boks. Det betyder,
-at man fx ikke kan få en datovælger for et tekst-felt selvom, at man godt kan gemme en dato-streng i et tekstfelt.
+Fx bliver et `timestamp` felt til en datovælger i formularen og et `bolean` felt bliver til en tjek-boks. Det betyder, 
+at det er udelukkede typerne i PostGIS, der styrer inputfelterne i formularen.   
 
-Det er muligt at gøre tal- og tekst-felttyper til "drop-down"-felter. Værdier i listen kan angives på tre måder:
+Der er en felttype i PostGIS kaldet `bytea`. Det er til binær data. Da det typisk er billeder, man gemmer i et sådan 
+felt, bliver denne felttyper til et billede-felt. På devices, som kan tage billeder, får man adgang til kamera og fotorulle. 
+På andre devices kan der vælges et foto fra filsystemet.
+
+> **_Bemærk:_** at billeder ikke bliver gemt som filer, men en "blob" i tabellen. Vidi kan vise billederne info-pop-up,
+> men det er nødvendigt at decode data for at få en JPEG fil ud.
+
+Det er muligt at gøre tal- og tekst-felttyper til "drop-down"-felter, således kun bestemte værdier kan indtastes.   
+
+> **_Bemærk:_** at drop-down indstillinger også virker på filter-funktionen.
+
+Værdier i listen kan angives på fire måder:
 
 ### Reference-tabel
 
 Værdier kan komme fra en anden tabel i databasen. Dette angives ved tre parameter i et JSON objekt:
 
 ```json
-{
-  "_rel": "schema.tabel",
-  "_value": "feltnavn",
-  "_text": "feltnavn"
-}  
+{"_rel": "schema.tabel", "_value": "feltnavn", "_text": "feltnavn"}  
 ``` 
 
 `_rel` angiver reference-tabellen (eller view) som schema-kvalificeret (schema-navnet skal angives foran tabelnavnet).
@@ -48,7 +55,12 @@ Listen kan både bestå af tal og tekster.
 ### Wild card
 
 Der kan dannes en drop-down-liste af samtlige unikke værdier som allerede findes i feltet. Det gøres ved at indsætte * i
-feltet.
+feltet. Dette er dog ikke så anvendelig ved editering og er nok bedre anvendt på filterfunktionen.
+
+### Foreign constrains
+
+Hvis et felt har såkaldte foreign constrains i databasen, vil disse bliver listet i drop-down-listen. Dette kræver adgang
+til databasen, så det ligger udenfor denne workshop.
 
 [Link til manualen](https://vidi.readthedocs.io/da/latest/pages/standard/92_gc2_meta_information.html#egenskaber)
 
@@ -76,7 +88,7 @@ Og til sidst prøv denne reference-tabel:
 {"_rel":"workshop.d_basis_ja_nej", "_value":"ja_nej_kode", "_text":"ja_nej"}
 ```
 
-3. Prøv at anvende en andre reference tabeller. 
+3. Prøv at anvende en andre reference-tabeller. 
 
 I feltet `cvr_kode` kan `d_basis_ansvarlig_myndighed` anvendes således:
 
@@ -84,9 +96,10 @@ I feltet `cvr_kode` kan `d_basis_ansvarlig_myndighed` anvendes således:
 {"_rel":"workshop.d_basis_ansvarlig_myndighed", "_value":"cvr_kode", "_text":"cvr_navn"}
 ```
 
-I feltet `saeson_k` kan `d_5800_saeson` anvendes således:
+I feltet `facil_ty_k` kan `d_5800_facilitet` anvendes således: (kan kun anvendes i `t_5800_fac_pkt` og `t_5801_fac_fl)
 
 ```json
-{"_rel":"workshop.d_5800_saeson", "_value":"saeson_k", "_text":"saeson"}
+{"_rel":"workshop.d_5800_facilitet", "_value":"facil_ty_k", "_text":"facil_ty"}
 ```
+
 

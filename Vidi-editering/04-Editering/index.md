@@ -23,14 +23,14 @@ Punkt 3 og 4 kan ombyttes.
 4. Nu ses attribut formularen og det er muligt at ændre geometrien. Lav de ønskede ændringer.
 5. Der klikkes på `SUBMIT` knappen nederst på formularen for at afslutte opdateringen.
 
+![Opdatere/slet](../assets/update-delete.png)
+
 ## Slet feature
 
 1. Tænd laget, som du vil opdatere.
 2. Klik på den feature du ønsker at slette. Hvis lag er raster-udgaven, så skal Info værktøjet aktiveres først.
 3. I pop-up'en er der to ikoner: En blyant og en affaldsspand. Klik på affaldsspand.
 4. Klik `OK` i dialogen.
-
-![Opdatere/slet](../assets/update-delete.png)
 
 I alle ovenstående tilfælde kræves log ind. Man kan starte med at logge ind eller vente til, at man er færdig med at
 editere. Vælges det sidste vil transaktionskøen ikke løbende bliver afviklet, men først når man logger ind.

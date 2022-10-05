@@ -21,7 +21,7 @@ lag og IKKE datamodel.
 For at kunne gennemføre denne workshop kræves adgang til GC2/Vidi.
 
 Du kan anvende denne [GC2/Vidi installation](https://swarm.gc2.io/) hvor du kan oprette en database og uploade
-workshoppens [datasæt](https://github.com/gc2vidi/workshops/raw/main/Vidi-svg-layers/data/data.zip)
+workshoppens [datasæt](https://github.com/gc2vidi/workshops/raw/main/Vidi-editering/data/data.zip)
 
 Dataene skal udpakkes før upload til GC2.
 
@@ -34,7 +34,8 @@ Dataene består af disse geometri datasæt:
 * t_5800_fac_pkt.shp
 * vejmidte_brudt.zip
 
-Alle ovenstående datasæt skal uploades med EPSG:25832 og med encoding UTF8. `vejmidte_brudt.zip` skal ikke udpakkes før upload, da den fylder en del. 
+Alle ovenstående datasæt skal uploades med EPSG:25832 og med encoding UTF8. `vejmidte_brudt.zip` skal ikke udpakkes før
+upload, da den fylder en del.
 
 Derudover er der disse datasæt uden geometri:
 
@@ -44,4 +45,5 @@ Derudover er der disse datasæt uden geometri:
 
 Disse datasæt uploades med encoding UTF8. EPSG koden er underordnet da de ikke indeholder geometrier.
 
-
+> **_Bemærk:_** at editering kun fungerer med https (sikker forbindelse) da der anvendes nogle moderne browser
+> faciliteter, som kun er tilgængelige med https.

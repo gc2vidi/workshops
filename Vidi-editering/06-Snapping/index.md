@@ -5,7 +5,7 @@ Når man plotter geometrier bliver der snappet til alle synlige vektor-lag, inkl
 Hvis man vil snappe til et større lag fx vejmidter eller jordstykker, som ikke kan vises som vektor-lag i deres helhed,
 kan "dynamisk load" aktiveres.
 
-Dynamisk load betyder, at der kun hentes data, som dækker kortudsnittet samt en buffer udenom. Når kortudsnittet skifter 
+Dynamisk load betyder, at der kun hentes data, som dækker kortudsnittet samt en buffer udenom. Når kortudsnittet skifter, 
 bliver der hentet nye data - hvis det er nødvendigt.   
 
 Indstillingen `Max features` styrer hvornår data vises. Det er altså ikke et spørgsmål om hvorvidt man er over en bestemt

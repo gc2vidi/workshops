@@ -2,7 +2,7 @@
 
 Attribut formularen bliver dannet ud fra typerne i PostGIS tabellen.
 
-Fx bliver et `timestamp` felt til en datovælger i formularen og et `bolean` felt bliver til en tjek-boks. Det betyder, 
+Fx bliver et `timestamp` felt til en datovælger i formularen og et `boolean` felt bliver til en tjek-boks. Det betyder, 
 at det er udelukkede typerne i PostGIS, der styrer inputfelterne i formularen.   
 
 Der er en felttype i PostGIS kaldet `bytea`. Det er til binær data. Da det typisk er billeder, man gemmer i et sådan 
@@ -30,7 +30,7 @@ Værdier kan komme fra en anden tabel i databasen. Dette angives ved tre paramet
 
 `_value` angiver feltet, som indeholder værdierne.
 
-`_text angiver feltet, som indeholder den tekst, der skal vises i drop-down-listen. Dette felt kan godt være det samme
+`_text` angiver feltet, som indeholder den tekst, der skal vises i drop-down-listen. Dette felt kan godt være det samme
 som ovenstående _value felt.
 
 ### Værdi-tekst liste
@@ -52,9 +52,11 @@ Værdier kan angives som en liste i et JSON array. Værdierne bliver vist i drop
 
 Listen kan både bestå af tal og tekster.
 
+> **_Bemærk:_** at hvis en værdi skal opfattes som et tal, skal der __ikke__ `"` omkring. Derimod skal tekst altid have `"` omkring. 
+
 ### Wild card
 
-Der kan dannes en drop-down-liste af samtlige unikke værdier som allerede findes i feltet. Det gøres ved at indsætte * i
+Der kan dannes en drop-down-liste af samtlige unikke værdier som allerede findes i feltet. Det gøres ved at indsætte `* i
 feltet. Dette er dog ikke så anvendelig ved editering og er nok bedre anvendt på filterfunktionen.
 
 ### Foreign constrains
@@ -68,11 +70,13 @@ til databasen, så det ligger udenfor denne workshop.
 
 1. Upload csv filerne i databasen. Følgende forudsætter, at de er uploaded til schemaet `workshop`.
 
-2. I fritidslagene er der en del Ja/nej felter. I laget `t_5800_fac_pkt` prøv først at indsætte i `Egenskaber` for feltet `vandhane_k`:
+2. I friluftsliv-lagene er der en del Ja/nej felter. I laget `t_5800_fac_pkt` prøv først at indsætte i `Egenskaber` for feltet `vandhane_k`:
 
 ```json
 [1, 0]
 ```
+
+![Egenskaber](../assets/properties.png)
 
 og skift ud med:
 
@@ -88,7 +92,7 @@ Og til sidst prøv denne reference-tabel:
 {"_rel":"workshop.d_basis_ja_nej", "_value":"ja_nej_kode", "_text":"ja_nej"}
 ```
 
-3. Prøv at anvende en andre reference-tabeller. 
+Prøv at anvende en andre reference-tabeller. 
 
 I feltet `cvr_kode` kan `d_basis_ansvarlig_myndighed` anvendes således:
 

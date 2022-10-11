@@ -6,6 +6,8 @@
 [Vidi vektorlag](Vidi-svg-layers)  
 [Vidi editering](Vidi-editering)   
 
+[Se optagelser af workshop](https://vimeo.com/showcase/9890937)
+
 
 
 

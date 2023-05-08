@@ -5,7 +5,7 @@ definerer en række såkaldte css-classes. Classes er en eller flere css regler,
 der samles under et class-navn og derigennem kan tilknyttes et html-element.  
 
 Det er en god ide at anvende classes i stedet for eksplicitte style attributter. Derved følger dine templates de ændringer, 
-der evt. bliver fortaget i det overordnet. Fx i stedet for at skrive Vidi primær-farve direkte ind i en style-attribut, kan 
+der evt. bliver fortaget i det overordnede design. Fx i stedet for at skrive Vidi primær-farve direkte ind i en style-attribut, kan 
 der anvendes en class, som tildeler den anvendte primær-farven. Derved behøver du ikke rette i templates, hvis du ændrer primær-farven.  
 
 {% raw %}

@@ -2,7 +2,7 @@
 
 I dette modul vil vi dykke lidt mere ned i HTML delen af templates.
 
-## Link
+## Links
 
 Hvis man har en felt med web-side adresser, kan man bruges a-tagget (anchor) til at skabe hyper-links.   
 
@@ -20,7 +20,7 @@ Ofte vil man gerne have linket til at åbne i et nyt fane, som kan klares med `t
 
 > **_NOTE:_**  Det er brugerens browseropsætning, der styres om siden skal åbnes i en ny fane eller nyt vindue.
 
-## Billed
+## Billeder
 
 Ligeledes hvis man har et felt med links til billeder, kan man bruge img-tagget (image) til at vise billeder
 

@@ -7,7 +7,7 @@ indeholder derefter. Egenskaber omfatter om attributten skal være med, rækkef�
 Hvis en enkelte felter, skal se præsenteres anderledes end standard-templaten gør, behøver man ikke at skrive en hel ny template, 
 men man kan i stedet definere en template til det enkelt felt.  
 
-## Hej Verden! Eksemplet
+## Hej Verden! Eksempel
 
 En felt-template fungere ligesom en pop-up-template, men skrives ind i Strukturfanen i kolonnen `Temaplate`. Man kan bruge alle tabellens 
 felter i en felt-template:
@@ -20,8 +20,8 @@ Hej Verden!
 
 ## Eksempler
 
-Felt-templates kan anvendes til mange forskellige formål. Det kan, at et felt i pop-up'en skal fremhæves vha. fx en anden 
-farve eller man ønsker at sammentrække flere felter i et. Fx denne template i feltet `navn`, der viser kommunenavnet i 
+Felt-templates kan anvendes til mange forskellige formål. Det kan være, at et felt i pop-up'en skal fremhæves vha. fx en anden 
+farve eller man ønsker at sammentrække flere felter i et. Prøv fx denne template i feltet `navn`, der viser kommunenavnet i 
 lys grå kursiv skrift bag selve navnet på faciliteten:
 
 ```html

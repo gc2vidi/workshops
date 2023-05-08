@@ -21,5 +21,3 @@ Dataene består af:
 
 Datasættet skal uploades med EPSG:25832 og med encoding UTF8.
 
-[Denne Vidi instans](https://vidi.swarm.gc2.io/app/demo/workshop/) med de tre lag kan anvendes til flere af øvelserne.
-

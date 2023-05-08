@@ -24,15 +24,20 @@ Felt-templates kan anvendes til mange forskellige formål. Det kan være, at et 
 farve eller man ønsker at sammentrække flere felter i et. Prøv fx denne template i feltet `navn`, der viser kommunenavnet i 
 lys grå kursiv skrift bag selve navnet på faciliteten:
 
+{% raw %}
 ```html
 {{navn}} <i style="color: silver">{{cvr_navn}}</i>
 ```
+{% endraw %}
+
 Det kan også være, at man ønsker, at der står noget andet end `link` når `Gør til link` anvendes. Samt kan der indsættes 
 en titel på linket:
 
+{% raw %}
 ```html
 <a href="{{link}}" target="_blank" title="Link til hjemmeside for {{navn}}">Link til ekstern hjemmeside</a>
 ```
+{% endraw %}
 
 ## Øvelse
 

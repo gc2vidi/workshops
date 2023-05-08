@@ -8,6 +8,7 @@ Det er en god ide at anvende classes i stedet for eksplicitte style attributter.
 der evt. bliver fortaget i det overordnet. Fx i stedet for at skrive Vidi primær-farve direkte ind i en style-attribut, kan 
 der anvendes en class, som tildeler den anvendte primær-farven. Derved behøver du ikke rette i templates, hvis du ændrer primær-farven.  
 
+{% raw %}
 ```handlebars
 <div class="text-center">
     <img class="w-100 mb-4" src="{{geofafoto}}" />
@@ -16,11 +17,13 @@ der anvendes en class, som tildeler den anvendte primær-farven. Derved behøver
     <a target="_blank" href="{{link}}">Link til hjemmeside</a>
 </div>
 ```
+{% endraw %}
 
 > **_NOTE:_** De viste eksempler bruger classes fra Bootstrap 5.2, og kan derfor kun anvendes i Ny Vidi.
 
 Bootstrap' css classes gør det også let at lave egentlige widgets i templates. Nedenfor er et eksempel på en faneblad struktur:
 
+{% raw %}
 ```handlebars
 <ul class="nav nav-tabs" id="myTab">
   <li class="nav-item">
@@ -43,6 +46,7 @@ Bootstrap' css classes gør det også let at lave egentlige widgets i templates.
   </div>
 </div>
 ```
+{% endraw %}
 
 ## Øvelse
 

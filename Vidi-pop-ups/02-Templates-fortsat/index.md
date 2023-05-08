@@ -41,15 +41,18 @@ css regler (dem er der mange af!). Her bruger vi `width` reglen:
 
 Vi kan du sammensatte en komplet template af forskellige felt-værdier:
 
+{% raw %}
 ```html
 <img style="width:100%" src="{{geofafoto}}" />
 <h5>{{navn}}</h5>
 <p>{{beskrivels}}</p>
 <a target="_blank" href="{{link}}">Link til hjemmeside</a>
 ```
+{% endraw %}
 
 Ved at omslutte det hele i en generisk container kaldet et `div` element, kan vi styre fx tekstjustering: 
 
+{% raw %}
 ```html
 <div style="text-align:center">
     <img style="width:100%; margin-bottom: 10px" src="{{geofafoto}}" />
@@ -58,6 +61,7 @@ Ved at omslutte det hele i en generisk container kaldet et `div` element, kan vi
     <a target="_blank" href="{{link}}">Link til hjemmeside</a>
 </div>
 ```
+{% endraw %}
 
 > **_NOTE:_**  Indrykningen har ingen teknisk betydning, men gør templaten lettere at læse.
 

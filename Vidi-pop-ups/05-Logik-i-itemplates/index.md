@@ -7,6 +7,7 @@ denne workshop vil kun gennemgå dette.
 
 Et logisk udtryk vil enten resultere i `sand` eller `falsk` og kan bruge til at teste en felt-værdi.
 
+{% raw %}
 ```handlebars
 <div style="text-align:center">
     <img style="width:100%; margin-bottom: 10px" src="{{geofafoto}}" />
@@ -20,8 +21,9 @@ Et logisk udtryk vil enten resultere i `sand` eller `falsk` og kan bruge til at 
     {{/link}}
 </div>
 ```
+{% endraw %}
 
-Den første `{{#link}} {{/link}}` tester om feltet `link` er udfyldt og den sidste `{{#link}} {{/link}}` tester om det er tomt. 
+Den første {% raw %}`{{#link}} {{/link}}` {% endraw %} tester om feltet `link` er udfyldt og den sidste {% raw %}`{{#link}} {{/link}}`{% endraw %} tester om det er tomt. 
 Hvis udtrykket er sandt, udskrives det, der står mellem markeringerne. I første tilfælde udskrives et HTML a-tag (link) og hvis sidste er 
 sandt udskrives en kursiv tekst, med oplysning om, at der ingen link er.
 

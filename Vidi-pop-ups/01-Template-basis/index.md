@@ -54,7 +54,8 @@ Hvis vi ønskede, at linjen skulle stå for sig selv, kunne vi angive, at det er
 Det er nok ikke så interessant at skrive statisk tekst ind i pop-ups. Som regel vil man gerne vise indhold fra den feature 
 man klikker på. Det er her pladsholdere kommer ind i billedet.   
 
-En pladsholder er blot attribut-navnet (feltnavnet) opmærket med tegnende `{{ }}` fx:
+En pladsholder er blot attribut-navnet (feltnavnet) opmærket med tegnende {% raw %}`{{ }}`{% endraw %} fx:
+
 
 {% raw %}
 ```handlebars
@@ -62,7 +63,7 @@ Du klikkede på {{navn}}
 ```
 {% endraw %}
 
-Bemærk at `{{ }}` ikke er HTML opmærkning men tilhører template-sproget. Vidi vil simpelthen blot udskifte `{{navn}}` med 
+Bemærk at {% raw %}`{{ }}`{% endraw %} ikke er HTML opmærkning men tilhører template-sproget. Vidi vil simpelthen blot udskifte {% raw %}`{{navn}}`{% endraw %} med
 værdien i attributten `navn` før browseren viser det. Her er templaten fået en HTML opmærkning, så navn bliver fremhævet:
 
 {% raw %}

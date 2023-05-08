@@ -4,19 +4,23 @@ I dette modul vil vi dykke lidt mere ned i HTML delen af templates.
 
 ## Links
 
-Hvis man har en felt med web-side adresser, kan man bruges a-tagget (anchor) til at skabe hyper-links.   
+Hvis man har et felt med web-side adresser, kan man bruges a-tagget (anchor) til at skabe hyper-links.   
 
 Her støder vi på de såkaldte HTML "attributter" (ikke at forveksle med attributter i GIS sammenhæng): 
 
+{% raw %}
 ```html
 <a href="{{link}}">Link til hjemmeside</a>
 ```
+{% endraw %}
 
 Ofte vil man gerne have linket til at åbne i et nyt fane, som kan klares med `target` attributten:
 
+{% raw %}
 ```html
 <a target="_blank" href="{{link}}">Link til hjemmeside</a>
 ```
+{% endraw %}
 
 > **_NOTE:_**  Det er brugerens browseropsætning, der styres om siden skal åbnes i en ny fane eller nyt vindue.
 

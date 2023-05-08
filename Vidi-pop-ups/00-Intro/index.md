@@ -4,7 +4,9 @@ I Vidi bruges pop-ups i feature-info og mouse-over funktionerne. Indholdet i pop
 I de fleste tilfælde vil man typisk bruge den template, der er lagt ind som standard. Men man kan selv definere templates 
 og derved give indholdet et andet layout og udtryk samt lave interaktive elementer i pop-ups.   
 
-Denne workshop vil gå i dybden med hvordan templates skrives og anvendes.
+Denne workshop vil gå i dybden med hvordan templates skrives og anvendes.   
+
+![eksempel](../assets/example.png)
 
 ## Forudsætninger
 For at kunne gennemføre denne workshop kræves adgang til GC2/Vidi.

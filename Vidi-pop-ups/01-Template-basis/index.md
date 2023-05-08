@@ -4,7 +4,7 @@ En template er tekst, som kan opmærkes med HTML. Så enhver HTML tekst er en va
 en template er muligheden for at placere såkaldte "pladsholdere" i teksten, der vil bliver skiftet ud med attribut-værdier 
 fra den feature man klikker på.   
 
-Der er også mulighed for at indbygge logiske udtryk og løkker i templates og dette vil blive introduceret i 05 Logik i templates   
+Der er også mulighed for at indbygge logiske udtryk og løkker i templates og dette vil blive introduceret i [05 Logik i templates](../05-Logik-i-itemplates)   
 
 ## Hvordan skrives en template?
 
@@ -56,16 +56,20 @@ man klikker på. Det er her pladsholdere kommer ind i billedet.
 
 En pladsholder er blot attribut-navnet (feltnavnet) opmærket med tegnende `{{ }}` fx:
 
+{% raw %}
 ```handlebars
 Du klikkede på {{navn}}
 ```
+{% endraw %}
 
 Bemærk at `{{ }}` ikke er HTML opmærkning men tilhører template-sproget. Vidi vil simpelthen blot udskifte `{{navn}}` med 
 værdien i attributten `navn` før browseren viser det. Her er templaten fået en HTML opmærkning, så navn bliver fremhævet:
 
+{% raw %}
 ```handlebars
 Du klikkede på <b>{{navn}}</b>
 ```
+{% endraw %}
 
 ## Øvelse
 

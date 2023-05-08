@@ -20,7 +20,7 @@ Hej Verden!
 
 ## Eksempler
 
-Felt-templates kan anvendes til mange forskellige formål. Det kan være, at et felt i pop-up'en skal fremhæves vha. fx en anden 
+Felt-templates kan anvendes til mange forskellige formål. Det kan være, at et felt i pop-up'en skal fremhæves ved brug af en anden 
 farve eller man ønsker at sammentrække flere felter i et. Prøv fx denne template i feltet `navn`, der viser kommunenavnet i 
 lys grå kursiv skrift bag selve navnet på faciliteten:
 

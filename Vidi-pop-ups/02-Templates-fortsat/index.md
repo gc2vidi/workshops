@@ -64,7 +64,7 @@ Ved at omslutte det hele i en generisk container kaldet et `div` element, kan vi
 ```html
 <div style="text-align:center">
     <img style="width:100%; margin-bottom: 10px" src="{{geofafoto}}" />
-    <h5>{{navn}}</h5>
+    <h5 style="color: darkgray">{{navn}}</h5>
     <p>{{beskrivels}}</p>
     <a target="_blank" href="{{link}}">Link til hjemmeside</a>
 </div>

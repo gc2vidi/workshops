@@ -11,7 +11,7 @@ Et logisk udtryk vil enten resultere i `sand` eller `falsk` og kan bruges til at
 ```handlebars
 <div style="text-align:center">
     <img style="width:100%; margin-bottom: 10px" src="{{geofafoto}}" />
-    <h5>{{navn}}</h5>
+    <h5 style="color: darkgray">{{navn}}</h5>
     <p>{{beskrivels}}</p>
     {{#link}}
         <a target="_blank" href="{{link}}">Link til hjemmeside</a>

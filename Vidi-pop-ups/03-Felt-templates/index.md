@@ -1,10 +1,10 @@
 # Felt-templates
 
-Hvis der ikke defineres en template anvendes standard templaten, som er en løkke, der løber alle attributter i gennem og
-udskriver attribut-navn og værdi over hinanden. Standard templaten læser egenskaber fra lagets struktur-faneblad og tilpasser
-indeholder derefter. Egenskaber omfatter om attributten skal være med, rækkefølge, alias, link, media mv.
+Hvis der ikke defineres en template anvendes standard-templaten, som er en løkke, der løber alle felter igennem og
+udskriver felt-navn og værdi efter hinanden. Standard-templaten læser egenskaber fra lagets struktur-faneblad og tilpasser
+indeholdet derefter. Egenskaber omfatter om attributten skal være med, rækkefølge, alias, link, media mv.
 
-Hvis en enkelte felter, skal se præsenteres anderledes end standard-templaten gør, behøver man ikke at skrive en hel ny template, 
+Hvis enkelte felter skal se præsenteres anderledes end standard-templaten gør, behøver man ikke at skrive en hel ny template, 
 men man kan i stedet definere en template til det enkelt felt.  
 
 ## Hej Verden! Eksempel

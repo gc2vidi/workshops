@@ -33,17 +33,19 @@ Ligeledes hvis man har et felt med links til billeder, kan man bruge img-tagget 
 ```
 
 Typisk vil man gerne have skaleret billedet ned til bredden af pop-up'en. Det kan gøres med `style` attributten, som indeholder 
-css regler (dem er der mange af!). Her bruger vi `width` reglen:
+css regler (dem er der mange af!). Her bruger vi `width` reglen til at sætte billedets bredde til pop-ups bredde:
 
+{% raw %}
 ```html
 <img style="width:100%" src="{{geofafoto}}" />
 ```
+{% endraw %}
 
 > **_NOTE:_**  Det er kun nødvendigt at skalere i bredden, da browseren selv sørger for at tilpasse højden.
 
 ## Komplet eksempel
 
-Vi kan du sammensatte en komplet template af forskellige felt-værdier:
+Vi kan nu sammensatte en komplet template af forskellige felt-værdier:
 
 {% raw %}
 ```html

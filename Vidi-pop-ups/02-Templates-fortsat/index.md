@@ -28,9 +28,11 @@ Ofte vil man gerne have linket til at åbne i et nyt fane, som kan klares med `t
 
 Ligeledes hvis man har et felt med links til billeder, kan man bruge img-tagget (image) til at vise billeder
 
+{% raw %}
 ```html
 <img src="{{geofafoto}}" />
 ```
+{% endraw %}
 
 Typisk vil man gerne have skaleret billedet ned til bredden af pop-up'en. Det kan gøres med `style` attributten, som indeholder 
 css regler (dem er der mange af!). Her bruger vi `width` reglen til at sætte billedets bredde til pop-ups bredde:

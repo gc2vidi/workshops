@@ -5,7 +5,7 @@ denne workshop vil kun gennemgå dette.
 
 ## Hvad er et logisk udtryk
 
-Et logisk udtryk vil enten resultere i `sand` eller `falsk` og kan bruge til at teste en felt-værdi.
+Et logisk udtryk vil enten resultere i `sand` eller `falsk` og kan bruges til at teste om en felt-værdi er tom.
 
 {% raw %}
 ```handlebars

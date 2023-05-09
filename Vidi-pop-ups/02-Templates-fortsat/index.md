@@ -4,7 +4,7 @@ I dette modul vil vi dykke lidt mere ned i HTML delen af templates.
 
 ## Links
 
-Hvis man har et felt med web-side adresser, kan man bruges a-tagget (anchor) til at skabe hyper-links.   
+Hvis man har et felt med web-side adresser, kan man bruges a-elementet (anchor) til at skabe hyper-links.   
 
 Her støder vi på de såkaldte HTML "attributter" (ikke at forveksle med attributter i GIS sammenhæng): 
 
@@ -14,7 +14,7 @@ Her støder vi på de såkaldte HTML "attributter" (ikke at forveksle med attrib
 ```
 {% endraw %}
 
-Ofte vil man gerne have linket til at åbne i et nyt fane, som kan klares med `target` attributten:
+Ofte vil man gerne have linket til at åbne i et nyt fane. Det kan klares med `target` attributten:
 
 {% raw %}
 ```html
@@ -22,17 +22,19 @@ Ofte vil man gerne have linket til at åbne i et nyt fane, som kan klares med `t
 ```
 {% endraw %}
 
-> **_NOTE:_**  Det er brugerens browseropsætning, der styres om siden skal åbnes i en ny fane eller nyt vindue.
+> **_NOTE:_**  Det er brugerens browseropsætning, der styres om siden skal åbnes i en ny fane eller nyt vindue. Det mest almindelige er en ny fane.
 
 ## Billeder
 
-Ligeledes hvis man har et felt med links til billeder, kan man bruge img-tagget (image) til at vise billeder
+Ligeledes hvis man har et felt med links til billeder, kan man bruge img-elementet (image) til at vise billeder
 
 {% raw %}
 ```html
 <img src="{{geofafoto}}" />
 ```
 {% endraw %}
+
+> **_NOTE:_**  img-elementet er et såkaldt selv-lukkede elementet uden indhold. Det lukkes altså ikke med `</img>` 
 
 Typisk vil man gerne have skaleret billedet ned til bredden af pop-up'en. Det kan gøres med `style` attributten, som indeholder 
 css regler (dem er der mange af!). Her bruger vi `width` reglen til at sætte billedets bredde til pop-ups bredde:
@@ -71,7 +73,7 @@ Ved at omslutte det hele i en generisk container kaldet et `div` element, kan vi
 ```
 {% endraw %}
 
-> **_NOTE:_**  Indrykningen har ingen teknisk betydning, men gør templaten lettere at læse.
+> **_NOTE:_**  Indrykningen har ingen teknisk betydning, men gør templaten lettere at læse. Generelt har såkaldte white-space karakterer (tab, mellemrum, linjeskift mv.) ingen indflydelse på hvordan browseren viser teksten.
 
 ## Øvelse
 

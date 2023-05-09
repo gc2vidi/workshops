@@ -24,7 +24,7 @@ Et logisk udtryk vil enten resultere i `sand` eller `falsk` og kan bruges til at
 {% endraw %}
 
 Den første {% raw %}`{{#link}} {{/link}}` {% endraw %} tester om feltet `link` er udfyldt og den sidste {% raw %}`{{#link}} {{/link}}`{% endraw %} tester om det er tomt. 
-Hvis udtrykket er sandt, udskrives det, der står mellem markeringerne. I første tilfælde udskrives et HTML a-tag (link) og hvis sidste er 
+Hvis udtrykket er sandt, udskrives det, der står mellem markeringerne. I første tilfælde udskrives et HTML a-elementet (link) og hvis sidste er 
 sandt udskrives en kursiv tekst, med oplysning om, at der ingen link er.
 
 Template systemet, der anvendes i Vidi, hedder [Mustache](https://mustache.github.io/mustache.5.html), som er meget simpelt. 

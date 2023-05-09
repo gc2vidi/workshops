@@ -4,7 +4,7 @@ Hvis der ikke defineres en template anvendes standard-templaten, som er en løkk
 udskriver felt-navn og værdi efter hinanden. Standard-templaten læser egenskaber fra lagets struktur-faneblad og tilpasser
 indeholdet derefter. Egenskaber omfatter om attributten skal være med, rækkefølge, alias, link, media mv.
 
-Hvis enkelte felter skal se præsenteres anderledes end standard-templaten gør, behøver man ikke at skrive en hel ny template, 
+Hvis enkelte felter skal præsenteres anderledes end hvad standard-templaten gør, behøver man ikke at skrive en hel ny template, 
 men man kan i stedet definere en template til det enkelt felt.  
 
 ## Hej Verden! Eksempel
@@ -12,7 +12,9 @@ men man kan i stedet definere en template til det enkelt felt.
 En felt-template fungere ligesom en pop-up-template, men skrives ind i Strukturfanen i kolonnen `Temaplate`. Man kan bruge alle tabellens 
 felter i en felt-template:
 
-![Felt-template](../assets/field-template.png)
+![Felt-template](../assets/field-template.png)    
+
+På billedet indsættes `Hej Verden!` templaten for feltet `navn`;
 
 ```text
 Hej Verden!
@@ -26,7 +28,7 @@ lys grå kursiv skrift bag selve navnet på faciliteten:
 
 {% raw %}
 ```html
-{{navn}} <i style="color: silver">{{cvr_navn}}</i>
+{{navn}} <i style="color: darkgray">{{cvr_navn}}</i>
 ```
 {% endraw %}
 

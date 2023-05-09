@@ -8,7 +8,7 @@ Der er også mulighed for at indbygge logiske udtryk og løkker i templates og d
 
 ## Hvordan skrives en template?
 
-Vi starter ud med et meget simple template. Som skrevet ovenfor er en template blot tekst, som kan forsynes med HTML markører 
+Vi starter ud med en meget simple template. Som skrevet ovenfor er en template blot tekst, som kan forsynes med HTML markører 
 og pladsholdere, så ren tekst er faktisk også en valid template:
 
 ```text
@@ -54,7 +54,7 @@ Hvis vi ønskede, at linjen skulle stå for sig selv, kunne vi angive, at det er
 Det er nok ikke så interessant at skrive statisk tekst ind i pop-ups. Som regel vil man gerne vise indhold fra den feature 
 man klikker på. Det er her pladsholdere kommer ind i billedet.   
 
-En pladsholder er blot attribut-navnet (feltnavnet) opmærket med tegnende {% raw %}`{{ }}`{% endraw %} fx:
+En pladsholder er blot feltnavnet opmærket med tegnende {% raw %}`{{ }}`{% endraw %} fx:
 
 
 {% raw %}
@@ -63,14 +63,17 @@ Du klikkede på {{navn}}
 ```
 {% endraw %}
 
-Bemærk at {% raw %}`{{ }}`{% endraw %} ikke er HTML opmærkning men tilhører template-sproget. Vidi vil simpelthen blot udskifte {% raw %}`{{navn}}`{% endraw %} med
-værdien i attributten `navn` før browseren viser det. Her er templaten fået en HTML opmærkning, så navn bliver fremhævet:
+
+Her er templaten fået en HTML opmærkning, så navn bliver fremhævet:
 
 {% raw %}
 ```handlebars
 Du klikkede på <b>{{navn}}</b>
 ```
 {% endraw %}
+
+> **_NOTE:_**  {% raw %}`{{ }}`{% endraw %} ikke er HTML opmærkning men tilhører template-sproget. Vidi vil simpelthen blot udskifte {% raw %}`{{navn}}`{% endraw %} med
+værdien i attributten `navn` før browseren viser det.
 
 ## Øvelse
 

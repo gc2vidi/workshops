@@ -29,9 +29,9 @@ Herunder findes input til felter for laget `navne_p`. Du kan copy/paste dem ind 
 ```
 
 ```json
-{'Nej': 0, 'Ja': 1, 'Ved ikke': 2}
+{"Nej": 0, "Ja": 1, "Ved ikke": 2}
 ```
 
 ```json
-{'_rel':'public.ja_nej', '_value':'kode', '_text':'tekst'}
+{"_rel":"public.ja_nej", "_value":"kode", "_text":"tekst"}
 ```

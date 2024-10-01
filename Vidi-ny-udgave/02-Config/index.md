@@ -1,4 +1,4 @@
-# Config-filer
+# Ændringer i config
 
 Vidi er konfigureret gennem en fil på serveren (system config'en). Denne fils indstillinger kan ændres enkeltvis gennem såkaldte config-filer. Når Vidi startes, kan der angives en bestemt config-fil og indstillingerne i den vil så anvendes.
 

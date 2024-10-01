@@ -1,4 +1,4 @@
-# Ekstern CSS
+# Hvordan anvendes CSS
 
 Vidi kan hente eksterne CSS filer ved opstart. Formålet er at ændre udseende på Vidi - fx farver, størrelse, placering mv. af de forskellige elementer.
 

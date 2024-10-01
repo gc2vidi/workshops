@@ -1,4 +1,4 @@
-# Themes
+# Nye muligheder med themes
 
 Bootstrap understøtter nu ["themes" eller "color modes"](https://getbootstrap.com/docs/5.3/customize/color-modes/)
 

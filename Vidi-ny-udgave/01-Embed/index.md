@@ -1,4 +1,4 @@
-# Øndringer i embed
+# Ændringer i embed
 
 Både default og embed udgaverne af Vidi er lavet om. Før var det to ret forskellige udgaver af Vidi. Det betød, at visse funktioner i default-udgaven ikke kunne aktiveres i embed-udgaven.
 

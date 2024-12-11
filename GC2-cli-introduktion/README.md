@@ -1,7 +1,7 @@
 # GC2-cli introduktion
 
 [Modul 00](00-Intro) Intro   
-[Modul 01](01-Installation) Installation   
+[Modul 01](01-Installering) Installering   
 [Modul 02](02-Kommandoer) Kommandoer   
 [Modul 03](03-Connect) Connect     
 [Modul 04](04-Login) Login   

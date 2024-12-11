@@ -11,4 +11,4 @@ For at gennemføre denne workshop skal du have adgang til en GC2 instans version
 
 Du kan anvende denne [GC2/Vidi installation](https://test.admin.gc2.io/) hvor du kan oprette en database
 
-Til øvelserne skal du bruge nogle test data. En pakke med data kan hentes [her](https://github.com/mapcentia/workshops/raw/main/GC2-cli-introduktion/data/data.zip). Zip filen skal udpakkes.
+Til øvelserne skal du bruge nogle test data. En pakke med data kan hentes [her](https://github.com/gc2vidi/workshops/raw/refs/heads/main/GC2-cli-introduktion/data/data.zip). Zip filen skal udpakkes.

@@ -1,9 +1,9 @@
-# Installation af GC2-cli
+# Installering af GC2-cli
 
 Der er to måder at installere GC2-cli på:
 
-1. Download en installer
-2. Installer gennem npm
+1. Download en installer.
+2. Installer gennem npm.
 
 ## Download en installeren
 

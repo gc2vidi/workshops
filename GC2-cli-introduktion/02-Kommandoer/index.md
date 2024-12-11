@@ -4,7 +4,7 @@ Kommandoer skal køres i en "terminal". På Windows bringes den op ved fx: Logo-
 
 Det anbefales at installere Microsofts moderne terminal-app kaldet "Terminal".
 
-Når terminalen er klar, så testes gc2-cli af ved at skrive gc2 og kommando-linjen og taste Enter.
+Når terminalen er klar, så testes gc2-cli af ved at skrive gc2 på kommando-linjen og tast Enter.
 
 ![gc2 er klar i terminalen](../assets/terminal1.png)
 
@@ -48,7 +48,7 @@ Nedenfor ses hjælpen til både argumenter og flag.
 
 Så fx:
 
-`gc2 scheduler start 12 -n lokalplaner -f`
+`gc2 scheduler start 12 --name lokalplaner --force`
 
 Betyder start scheduler job 12 og kald proccessen 'lokalplaner' samt gennemtving oprettelse af ny tabel.
 
@@ -61,4 +61,4 @@ Vil man afbryde en kommando tastes Ctrl-c. Allerede kørte kommandoer kan kaldes
 ## Øvelse
 
 - Åben en terminal på din PCer ved fx at taste Logo-knap og skrive 'powershell'
-- På kommando-linjen skrive gc2 og tast Enter. Du skulle gerne se output fra gc2-cli.
+- På kommando-linjen skriv gc2 og tast Enter. Du skulle gerne se output fra gc2-cli.

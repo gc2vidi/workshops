@@ -18,5 +18,4 @@ gc2 import ./data/ --dry_run
 
 - Download data pakken og udpak på din PCer eller anvend allerede eksisterende filer.
 - Prøv at importere filerne til GC2.
-
-
+- Opret evt. et nyt schema til dine data vha. `gc2 schema add`

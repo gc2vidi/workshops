@@ -4,7 +4,10 @@ GC2-cli er et kommando-linje-værktøj til GC2. Værktøjet gør det lettere at 
 
 Flere APIer, som er understøttet i GC2-cli er ikke tilgængelige i GC2 Admin. Det omvendte gør sig også gældende.
 
-For at gennemføre denne workshop skal du have adgang til en GC2 instans version 2024.12.1 eller derover.
+![Overlap mellem Admin og Cli](../assets/overlap.png)
+
+
+For at gennemføre denne workshop skal du have adgang til en GC2 instans version 2024.12.2 eller derover.
 
 Du kan anvende denne [GC2/Vidi installation](https://test.admin.gc2.io/) hvor du kan oprette en database
 

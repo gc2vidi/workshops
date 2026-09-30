@@ -7,3 +7,4 @@
 [Modul 04](04-MVT-tiles) MVT vektor-tiles  
 [Modul 05](05-MVT-i-Vidi) MVT baggrundskort i Vidi  
 [Modul 06](06-Tile-systemer) Tile-systemer (grids)  
+[Modul 07](07-Tile-backends) Tile-backends (SQLite, Disk, S3)  

@@ -1,6 +1,6 @@
 # Introduktion GC2 baggrundskort
 
-GC2 giver mulighed for at lave egne baggrundskort bestående af en række lag, der "sammensmeltes" til ét tile-lag. De enkelte lag kan opsætning i GC2 gennem MapServer eller QGIS Server og GC2-cli kan anevendes til at "seed" cachen.
+GC2 giver mulighed for at lave egne baggrundskort bestående af en række lag, der "sammensmeltes" til ét tile-lag – enten som raster-tiles (PNG) eller som vektor-tiles (MVT). De enkelte lag kan opsætning i GC2 gennem MapServer eller QGIS Server og GC2-cli kan anevendes til at "seed" cachen.
 
 ## Forudsætninger
 

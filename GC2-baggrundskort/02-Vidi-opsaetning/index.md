@@ -21,7 +21,7 @@ I en Vidi config kan du nu opsætte baggrundskortet. Det gøres med typen `gc2`.
             "type": "gc2",
             "id": "geodk",
             "name": "GeoDanmark kort",
-            "db": "worshop",
+            "db": "workshop",
             "host": "https://swarm.gc2.io",
             "config": {
                 "minZoom": 8,

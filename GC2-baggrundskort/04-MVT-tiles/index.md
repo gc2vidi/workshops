@@ -1,6 +1,6 @@
 # MVT vektor-tiles
 
-Indtil nu har baggrundskortet bestået af raster-tiles (PNG), som renderes færdige på serveren. GC2 kan også udstille de samme lag som **vektor-tiles** i formatet MVT (Mapbox Vector Tiles).
+Indtil nu har baggrundskortet bestået af raster-tiles (PNG eller JPEG), som renderes færdige på serveren. GC2 kan også udstille de samme lag som **vektor-tiles** i formatet MVT (Mapbox Vector Tiles).
 
 ## Hvad er en vektor-tile?
 

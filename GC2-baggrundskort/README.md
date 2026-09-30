@@ -8,3 +8,4 @@
 [Modul 05](05-MVT-i-Vidi) MVT baggrundskort i Vidi  
 [Modul 06](06-Tile-systemer) Tile-systemer (grids)  
 [Modul 07](07-Tile-backends) Tile-backends (SQLite, Disk, S3)  
+[Modul 08](08-QGIS) Tile caches i QGIS  

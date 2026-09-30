@@ -1,6 +1,7 @@
 # Vidi-opsætning
 
-I en Vidi config kan du nu opsætte baggrundskortet. Det gøres med typen `gc2`. I `id` angives det schema, som indeholder baggrundskortet.
+I en Vidi config kan du nu opsætte baggrundskortet. Det gøres med typen `gc2`. I `id` angives det schema, som indeholder
+baggrundskortet.
 
 ## Øvelse
 
@@ -8,28 +9,38 @@ I en Vidi config kan du nu opsætte baggrundskortet. Det gøres med typen `gc2`.
 
 ```json
 {
-    "schemata": [
-        "public"
-    ],
-    "brandName": "Base layer test",
-    "baseLayers": [
-        {
-            "id": "osm",
-            "name": "Open Street Map"
-        },
-        {
-            "type": "gc2",
-            "id": "geodk",
-            "name": "GeoDanmark kort",
-            "db": "workshop",
-            "host": "https://swarm.gc2.io",
-            "config": {
-                "minZoom": 8,
-                "maxZoom": 22,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; SDFE & MapCentia ApS"
-            }
-        }
-    ]
+  "schemata": [
+    "public"
+  ],
+  "brandName": "Base layer test",
+  "baseLayers": [
+    {
+      "id": "osm",
+      "name": "Open Street Map"
+    },
+    {
+      "type": "gc2",
+      "id": "geodk",
+      "name": "GeoDanmark kort",
+      "db": "workshop",
+      "host": "https://swarm.gc2.io",
+      "config": {
+        "minZoom": 8,
+        "maxZoom": 22,
+        "maxNativeZoom": 20,
+        "attribution": "&copy; SDFE & MapCentia ApS"
+      }
+    },
+    {
+      "type": "MVT",
+      "url": "http://localhost:3000/mvt/forvaltningskort.json",
+      "id": "geodk_test",
+      "name": "GeoDK test",
+      "description": "Skærmkort klassisk",
+      "attribution": "mvt",
+      "minZoom": 8,
+      "maxZoom": 22
+    }
+  ]
 }
 ```

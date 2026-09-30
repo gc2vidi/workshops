@@ -10,7 +10,7 @@ Bemærk:
 
 ## Sorting i et baggrundskort
 
-De enkelte lag i baggrundskortet sammenlægges i den rækkefølge, som `sort_id` angiver (højeste sort_id lægges øverest).
+De enkelte lag i baggrundskortet sammenlægges i den rækkefølge, som `sort_id` angiver (højeste sort_id lægges øverest). Er ikke nødvendigt ved MVT, da klinten kan foretage sorteringen.
 
 ## Sletning af cache
 
@@ -18,7 +18,7 @@ Sletning af cachen for baggrundskortet sker ved klik på `Ryd tile cache` i Data
 
 ## Nyttige instillinger (Gælder kun MapServer)
 
-`No clipping of labels` og `No clipping of polylines` kan afhjælpe af flader får mere end én label og stiplede linjer kommer til at se forkerte ud henover tile-sømmene 
+`No clipping of labels` og `No clipping of polylines` kan afhjælpe af flader får mere end én label og stiplede linjer kommer til at se forkerte ud henover tile-sømmene. Her ingen effekt på MVT. 
 
 ![Baggrundkort opsætning](../assets/gc2-baselayers-1.png)
 

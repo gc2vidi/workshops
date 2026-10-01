@@ -1,6 +1,6 @@
 # Tile-backends (SQLite, Disk, S3)
 
-Når MapCache har lavet en tile – ved seeding eller første gang en klient beder om den – gemmes den i en **cache-backend**. Backend'en afgør hvor og hvordan tiles ligger, og har betydning for performance, diskforbrug, deling mellem servere og rydning af cache.
+Når MapCache har lavet en tile, ved seeding eller første gang en klient beder om den, gemmes den i en "cache-backend". Backend'en afgør hvor og hvordan tiles ligger, og har betydning for performance, diskforbrug, deling mellem servere og rydning af cache.
 
 GC2 understøtter disse backends:
 
@@ -109,17 +109,7 @@ Tiles gemmes i hukommelsen og forsvinder, når de udløber eller serveren gensta
 
 ## Rydning af cache
 
-`Ryd tile cache` i GC2 Admin rydder SQLite- og Disk-caches for raster-tiles. Brug API'et til MVT-tilesets (`geodk.mvt`), for at være sikker på at de også bliver ryddet. Med API'et kan man rydde et bestemt tileset – og endda kun en del af det:
-
-```bash
-# Ryd hele MVT-tilesettet
-curl -X DELETE -H "Authorization: Bearer [token]" \
-  "https://swarm.gc2.io/api/v4/mapcache/database/[database]/tileset/geodk.mvt"
-
-# Ryd kun zoom 14-19 inden for et område (koordinater i grid'ets projektion)
-curl -X DELETE -H "Authorization: Bearer [token]" \
-  "https://swarm.gc2.io/api/v4/mapcache/database/[database]/tileset/geodk?zoom=14,19&bbox=1100502,7766728,1109292,7774524"
-```
+`Ryd tile cache` i GC2 App rydder SQLite- og Disk-caches for raster-tiles.
 
 | Backend | Ryd hele tilesettet | Ryd del (`bbox`/`zoom`) |
 |---|---|---|
@@ -141,10 +131,8 @@ Med `Lock` i `Tile cache` fanen kan en cache låses, så den ikke ryddes ved en 
 
 ## Øvelse
 
-- Find ud af hvilken backend din GC2-installation bruger som standard (`mapCache.type` i `App.php`). Har du ikke adgang til serveren, så spørg administratoren.
-
 - Vælg et af lagene i `geodk`, fx `bygning`, og se hvilke backends du kan vælge under `Cache` i `Tile cache` fanen.
 
 - Seed `geodk.mvt` for et par zoom-niveauer og ryd derefter kun ét zoom-niveau med API'et. Bekræft i Vidi eller Maputnik, at tiles bliver genskabt, når du zoomer ind.
 
-- Diskutér: Hvilken backend ville du vælge til et landsdækkende baggrundskort i både `g20` og `25832`, seedet til zoom 19? Tænk på antal tiles, diskplads og hvordan cachen skal ryddes.
+- Hvilken backend ville du vælge til et landsdækkende baggrundskort i både `g20` og `25832`, seedet til zoom 19? Tænk på antal tiles, diskplads og hvordan cachen skal ryddes.

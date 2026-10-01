@@ -17,7 +17,7 @@ WMTS er den mest fleksible løsning, fordi QGIS selv læser hvilke tilesets og g
 1. Vælg `Lag → Tilføj lag → Tilføj WMS/WMTS lag...`
 2. Klik `Ny` og indtast:
    * Navn: `GC2 workshop`
-   * URL: `https://swarm.gc2.io/mapcache/[database]/wmts/1.0.0/WMTSCapabilities.xml`
+   * URL: `https://test.admin.gc2.io/mapcache/[database]/wmts/1.0.0/WMTSCapabilities.xml`
 3. Klik `Forbind` og vælg fanen `Tilesets`
 4. Find `geodk` i listen. Hvert tileset optræder én gang pr. grid – vælg linjen med tile matrix set `25832` (eller `g20`)
 5. Klik `Tilføj`
@@ -31,7 +31,7 @@ XYZ er den hurtigste måde at tilføje et lag i web mercator:
 1. Højreklik på `XYZ Tiles` i `Gennemse` (Browser) panelet og vælg `Ny forbindelse...`
 2. Indtast:
    * Navn: `GeoDanmark (GC2)`
-   * URL: `https://swarm.gc2.io/mapcache/[database]/gmaps/geodk@g20/{z}/{x}/{y}.png`
+   * URL: `https://test.admin.gc2.io/mapcache/[database]/gmaps/geodk@g20/{z}/{x}/{y}.png`
    * Min. zoom: `0`, maks. zoom: fx `20`
 3. Dobbeltklik på forbindelsen for at tilføje laget
 
@@ -44,7 +44,7 @@ QGIS kan tegne MVT-tiles direkte og kan læse stylingen fra en MapLibre style-fi
 1. Højreklik på `Vector Tiles` i `Gennemse` panelet og vælg `Ny generisk forbindelse...`
 2. Indtast:
    * Navn: `GeoDanmark vektor (GC2)`
-   * URL: `https://swarm.gc2.io/mapcache/[database]/gmaps/geodk.mvt@g20/{z}/{x}/{y}.mvt`
+   * URL: `https://test.admin.gc2.io/mapcache/[database]/gmaps/geodk.mvt@g20/{z}/{x}/{y}.mvt`
    * Min. zoom: `0`, maks. zoom: `20`
    * Style URL: URL til din style-fil, fx `https://[bruger].github.io/[repo]/geodk.json`
 3. Dobbeltklik på forbindelsen for at tilføje laget
@@ -57,18 +57,6 @@ Tips:
 * Med `Identificer objekter` kan man klikke på features i vektor-tiles og se deres attributter – en god måde at undersøge hvad der ligger i tiles
 * Et vektor-tile lag kan også gemmes som `.qml`/`.sld` stil, hvis QGIS-udgaven skal genbruges i andre projekter
 
-## Beskyttede lag
-
-Baggrundskort er typisk offentlige, og så er der intet at konfigurere. Er et enkelt lag beskyttet, kan dets tiles hentes gennem GC2's autoriserende MapCache-proxy, som accepterer HTTP Basic login. Brug en XYZ-forbindelse med WMTS' RESTful sti (bemærk rækkefølgen `{y}/{x}`):
-
-```
-https://swarm.gc2.io/api/v4/mapcache/database/[database]/wmts/1.0.0/[schema].[lag]/default/g20/{z}/{y}/{x}.png
-```
-
-Opret en `Basic authentication` konfiguration i QGIS (`Indstillinger → Indstillinger → Godkendelse`) med dit GC2-brugernavn og password, og vælg den under `Godkendelse` i forbindelses-dialogen.
-
-Proxy'en tjekker rettigheder pr. lag. Den er derfor beregnet til enkelte lag og ikke til det sammensmeltede schema-lag.
-
 ## QGIS' egen cache
 
 QGIS gemmer også selv tiles i en lokal netværkscache. Er cachen i GC2 ryddet eller re-seedet, kan QGIS derfor stadig vise de gamle tiles. Løsning:
@@ -79,8 +67,6 @@ QGIS gemmer også selv tiles i en lokal netværkscache. Er cachen i GC2 ryddet e
 ## Øvelse
 
 - Sæt projektets CRS til `EPSG:25832` og tilføj baggrundskortet via WMTS i tile matrix set `25832`.
-
-- Tilføj det samme kort som XYZ Tiles i `g20`. Tænd og sluk lagene skiftevis og sammenlign skarpheden af tekster og linjer.
 
 - Tilføj MVT-udgaven som Vector Tiles med din style-fil fra Modul 04. Hvad bliver oversat korrekt, og hvad ser anderledes ud?
 

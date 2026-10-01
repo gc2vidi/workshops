@@ -23,7 +23,7 @@ baggrundskortet.
       "id": "geodk",
       "name": "GeoDanmark kort",
       "db": "workshop",
-      "host": "https://swarm.gc2.io",
+      "host": "https://test.admin.gc2.io",
       "config": {
         "minZoom": 8,
         "maxZoom": 22,
@@ -33,10 +33,9 @@ baggrundskortet.
     },
     {
       "type": "MVT",
-      "url": "http://localhost:3000/mvt/forvaltningskort.json",
-      "id": "geodk_test",
+      "url": "http://localhost:3000/mvt/workshop.json",
+      "id": "workshop-mvt",
       "name": "GeoDK test",
-      "description": "Skærmkort klassisk",
       "attribution": "mvt",
       "minZoom": 8,
       "maxZoom": 22

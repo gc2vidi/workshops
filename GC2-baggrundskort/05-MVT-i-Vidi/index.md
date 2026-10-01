@@ -4,7 +4,7 @@ Vidi kan vise vektor-tiles som baggrundskort med typen `MVT`. Vidi bruger [MapLi
 
 ## Opsætning
 
-I modsætning til typen `gc2` peger `url` ikke på GC2, men på **style-filen**. Det er style-filen, der fortæller hvor tiles hentes fra (under `sources`).
+I modsætning til typen `gc2` peger `url` ikke på GC2, men på style-filen. Det er style-filen, der fortæller hvor tiles hentes fra (under `sources`).
 
 ```json
 {
@@ -82,7 +82,7 @@ Da stylingen ligger i en separat fil, kan kortets udseende ændres ved blot at o
             "id": "geodk",
             "name": "GeoDanmark kort (raster)",
             "db": "workshop",
-            "host": "https://swarm.gc2.io",
+            "host": "https://test.admin.gc2.io",
             "config": {
                 "minZoom": 8,
                 "maxZoom": 22,

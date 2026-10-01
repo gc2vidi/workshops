@@ -1,6 +1,6 @@
 # Tile-systemer (grids)
 
-Alle tiles – raster eller vektor – ligger i et **tile-system**, i MapCache kaldet et *grid*. Grid'et bestemmer hvilken projektion tiles er i, og hvordan kortet deles op i zoom-niveauer og tiles. Klient og server skal være enige om grid'et, ellers passer tiles ikke sammen.
+Alle tiles – raster eller vektor – ligger i et tile-system, i MapCache kaldet et "grid". Grid'et bestemmer hvilken projektion tiles er i, og hvordan kortet deles op i zoom-niveauer og tiles. Klient og server skal være enige om grid'et, ellers passer tiles ikke sammen.
 
 ## Et grid består af
 
@@ -66,7 +66,7 @@ En tabel over zoom-niveauerne:
 | 12 | 0,4 | 102 | 1:1.430 |
 | 15 | 0,05 | 12,8 | 1:180 |
 
-Bemærk at zoom-niveauerne i et UTM-grid **ikke** svarer til zoom-niveauerne i `g20`. Ved seeding skal start/slut-zoom derfor vælges ud fra det konkrete grid.
+Bemærk at zoom-niveauerne i et UTM-grid IKKE svarer til zoom-niveauerne i `g20`. Ved seeding skal start/slut-zoom derfor vælges ud fra det konkrete grid.
 
 ## Konfigurér dit eget grid
 
@@ -75,7 +75,7 @@ Bemærk at zoom-niveauerne i et UTM-grid **ikke** svarer til zoom-niveauerne i `
 3. Gendan MapCache-konfigurationen, fx med gc2-cli:  
 `gc2 admin --task mapcachefile`
 
-GC2 tilføjer automatisk alle grids i mappen til **alle** tilesets (både PNG og MVT) – ud over `g20`.
+GC2 tilføjer automatisk alle grids i mappen til alle tilesets (både PNG og MVT) – ud over `g20`.
 
 Tips til resolutions:
 
@@ -84,7 +84,7 @@ Tips til resolutions:
 * Stop ved den fineste resolution, der giver mening for dine data – hvert ekstra niveau firdobler antallet af tiles
 * Genbrug gerne et udbredt dansk tile-system, så dine tiles passer sammen med andre UTM-tjenester
 
-Grids kræver adgang til GC2-serverens filsystem. På et hosted GC2 (som swarm.gc2.io) er `25832` allerede sat op.
+Grids kræver adgang til GC2-serverens filsystem. På et hosted GC2 (som test.admin.gc2.io) er `25832` allerede sat op.
 
 ## Brug af et UTM grid
 
@@ -92,13 +92,13 @@ Tiles i et UTM-grid hentes via WMTS eller TMS med grid-navnet i stedet for `g20`
 
 ```
 # WMTS capabilities – kan tilføjes i QGIS under "WMS/WMTS"
-https://swarm.gc2.io/mapcache/workshop/wmts/1.0.0/WMTSCapabilities.xml
+https://test.admin.gc2.io/mapcache/workshop/wmts/1.0.0/WMTSCapabilities.xml
 
 # TMS, raster
-https://swarm.gc2.io/mapcache/workshop/tms/1.0.0/geodk@25832/{z}/{x}/{y}.png
+https://test.admin.gc2.io/mapcache/workshop/tms/1.0.0/geodk@25832/{z}/{x}/{y}.png
 
 # TMS, vektor
-https://swarm.gc2.io/mapcache/workshop/tms/1.0.0/geodk.mvt@25832/{z}/{x}/{y}.mvt
+https://test.admin.gc2.io/mapcache/workshop/tms/1.0.0/geodk.mvt@25832/{z}/{x}/{y}.mvt
 ```
 
 Seeding sker som i Modul 03, blot med `--grid 25832`.
@@ -112,12 +112,3 @@ Husk (fra [Modul 05](../05-MVT-i-Vidi)): MVT baggrundskort i Vidi bruger altid `
 - Tilføj WMTS-tjenesten i QGIS med projektet i `EPSG:25832` og vælg dit baggrundskort i tile-matrix-sættet `25832`. Læg mærke til at kortet er skarpt – der er ingen omprojicering.
 
 - Sammenlign med `g20`-udgaven i QGIS. Hvad sker der med tekster og linjer, når QGIS omprojicerer fra web mercator?
-
-- Seed baggrundskortet i UTM-grid'et. Extent-laget skal være i samme projektion som grid'et (derfor blev `extent.shp` uploadet i EPSG:3857 til `g20`). Lav et view i UTM, fx i GC2's SQL-vindue:  
-`CREATE VIEW geodk.extent_25832 AS SELECT gid, ST_Transform(the_geom, 25832)::geometry(MultiPolygon, 25832) AS the_geom FROM geodk.extent`  
-(tilret evt. navnet på geometri-kolonnen og geometritypen)
-
-- Start seed-jobbet. Brug tabellen ovenfor til at vælge zoom-niveauer, der svarer til dem du seedede i `g20`:  
-`gc2 seed:start --start 8 --end 13 --grid 25832 --layer geodk --name geodk_utm --threads 2 --extent geodk.extent_25832`
-
-- Ekstra: Beregn selv resolutions til et grid, der kun dækker din kommune, og skriv XML-filen.

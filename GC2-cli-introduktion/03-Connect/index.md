@@ -17,5 +17,5 @@ gc2 connect
 
 ## Øvelse
 
-- Forbind gc2-cli til dig GC2 instans med `gc2 connect`.
+- Forbind gc2-cli til din GC2 instans med `gc2 connect`.
 - Kør `gc2 connect` igen og se, at forbindelsen er sat.

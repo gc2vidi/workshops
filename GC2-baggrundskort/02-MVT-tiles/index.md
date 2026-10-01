@@ -56,7 +56,7 @@ https://test.admin.gc2.io/mapcache/workshop/tms/1.0.0/geodk.mvt@g20/{z}/{x}/{y}.
 https://test.admin.gc2.io/mapcache/workshop/wmts/1.0.0/geodk.mvt/default/g20/{z}/{y}/{x}.mvt
 ```
 
-Om grid'et (`@g20`) – se [Modul 06](../06-Tile-systemer).
+Om grid'et (`@g20`) – se [Modul 03](../03-Tile-systemer).
 
 ## Style-filen (MapLibre style JSON)
 
@@ -188,7 +188,7 @@ MapServer beregner målestokken ud fra tilens størrelse (256 px) og en opløsni
 | 17 | 1,19 | 1:3.400 |
 | 18 | 0,60 | 1:1.700 |
 
-Vælg en værdi mellem to zoom-niveauer, fx `20000` for at skære mellem zoom 14 og 15. Så er det entydigt, hvilke niveauer featuren er med på. Et andet grid, fx `25832`, har andre målestokke pr. zoom (se [Modul 06](../06-Tile-systemer)).
+Vælg en værdi mellem to zoom-niveauer, fx `20000` for at skære mellem zoom 14 og 15. Så er det entydigt, hvilke niveauer featuren er med på. Et andet grid, fx `25832`, har andre målestokke pr. zoom (se [Modul 03](../03-Tile-systemer)).
 
 Style-filen skal stadig have egne `minzoom`/`maxzoom` og filtre for at styre, hvordan vejene tegnes. Klasserne styrer kun, hvad der er med i tilen.
 
@@ -205,13 +205,5 @@ Style-filen skal stadig have egne `minzoom`/`maxzoom` og filtre for at styre, hv
 
 ## Øvelse
 
-- Hent en enkelt tile i browseren for at se, at det virker (du får en binær fil):  
-`https://test.admin.gc2.io/mapcache/[din database]/gmaps/geodk.mvt@g20/14/8643/5015.mvt`
-
-- Gem style-eksemplet ovenfor som `geodk.json` og ret database-navnet i `tiles`.
-
+- Opsæt klasser så der sker udtynding af features i tiles.
 - Åbn `geodk.json` i [Maputnik](https://maplibre.org/maputnik/) (`Open → Upload`) og zoom ind over dataene.
-
-- Leg med stylingen: skift farver, tilføj en `line`-kontur på bygningerne, og tilføj et `filter` på `bygning` for fx `bygningsty`.
-
-- Eksportér den færdige style-fil – den skal bruges i næste modul.

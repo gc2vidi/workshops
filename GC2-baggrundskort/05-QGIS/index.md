@@ -1,6 +1,6 @@
 # Tile caches i QGIS
 
-Baggrundskortet fra GC2 kan bruges i QGIS på samme måde som i Vidi. QGIS kan hente tiles på tre måder:
+Baggrundskortet fra GC2 kan bruges i QGIS på samme måde som i Vidi. QGIS kan hente tiles på to måder:
 
 | Forbindelse i QGIS | Tile-type | Grids |
 |---|---|---|

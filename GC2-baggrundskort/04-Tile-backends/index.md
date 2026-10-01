@@ -25,7 +25,7 @@ GC2 understøtter disse backends:
 
 **Pr. lag** i fanen `Tile cache` under `Cache`, hvor man kan vælge Disk, SQLite, S3 eller Memcache.
 
-Vigtigt for baggrundskort: Det sammensmeltede schema-lag (`geodk` og `geodk.mvt`) bruger **altid** den globale backend. Indstillingen pr. lag gælder kun lagets egne tilesets (fx `geodk.bygning` og `geodk.bygning.mvt`). Det er samme princip som i [Modul 01](../01-Schema-opsaetning), hvor lagenes øvrige `Tile cache`-indstillinger heller ikke påvirker baggrundskortet.
+Vigtigt for baggrundskort: Det sammensmeltede schema-lag (`geodk` og `geodk.mvt`) bruger schemaets tile-indstillinger, som kan sættes gennem GC2-app. Indstillingen pr. lag gælder kun lagets egne tilesets (fx `geodk.bygning` og `geodk.bygning.mvt`).
 
 ## SQLite
 
@@ -130,9 +130,5 @@ Med `Lock` i `Tile cache` fanen kan en cache låses, så den ikke ryddes ved en 
 | Hurtigt skiftende data, ingen seeding | Memcache (eller ingen cache) |
 
 ## Øvelse
-
-- Vælg et af lagene i `geodk`, fx `bygning`, og se hvilke backends du kan vælge under `Cache` i `Tile cache` fanen.
-
-- Seed `geodk.mvt` for et par zoom-niveauer og ryd derefter kun ét zoom-niveau med API'et. Bekræft i Vidi eller Maputnik, at tiles bliver genskabt, når du zoomer ind.
 
 - Hvilken backend ville du vælge til et landsdækkende baggrundskort i både `g20` og `25832`, seedet til zoom 19? Tænk på antal tiles, diskplads og hvordan cachen skal ryddes.

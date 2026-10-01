@@ -1,6 +1,6 @@
 # Import af data
 
-GC2-cli kan importere et enkelt filsæt eller alle filsæt i en mappestruktur. Fordelen ved at anvende GC2-cli er, at den uploade og impotere en hel mappestruktur samt komprimere filerne inden upload.
+GC2-cli kan importere et enkelt filsæt eller alle filsæt i en mappestruktur. Fordelen ved at anvende GC2-cli er, at den kan uploade og impotere en hel mappestruktur samt komprimere filerne inden upload.
 
 Der skal angives en sti til en fil eller en mappe (undermapper vil også blive med taget) samt det schema filerne skal importeres til.
 

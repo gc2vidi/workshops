@@ -5,7 +5,6 @@ Baggrundskortet fra GC2 kan bruges i QGIS på samme måde som i Vidi. QGIS kan h
 | Forbindelse i QGIS | Tile-type | Grids |
 |---|---|---|
 | WMS/WMTS | Raster (PNG) | Alle – `g20`, `25832` osv. |
-| XYZ Tiles | Raster (PNG) | Kun `g20` (web mercator) |
 | Vector Tiles | Vektor (MVT) | `g20` (web mercator) |
 
 Bruger dit QGIS-projekt `EPSG:25832`, er WMTS i grid'et `25832` det bedste valg til raster-tiles. Så skal QGIS ikke omprojicere tiles, og tekster og linjer bliver skarpe.

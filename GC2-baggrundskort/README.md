@@ -8,3 +8,4 @@
 [Modul 05](05-QGIS) MVT baggrundskort i Vidi  
 [Modul 06](06-Tile-seeding) MVT baggrundskort i Vidi  
 [Modul 07](07-MVT-i-Vidi) Tile-backends (SQLite, Disk, S3)  
+[08-Vidi-opsaetning](08-Vidi-opsaetning)

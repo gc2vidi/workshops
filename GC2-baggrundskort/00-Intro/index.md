@@ -17,6 +17,7 @@ Dataene består af:
 * vejmidte.shp
 * bykerne.shp
 * extent.shp (EPSG:3857)
+* geodk.json (MapLibre style fil)
 
 Alle datasæt skal uploades som EPSG:25832 med encoding UTF8 med undtagelse af `extent.shp` som er projekteret i EPSG:3857.
 

@@ -9,7 +9,7 @@ I modsætning til typen `gc2` peger `url` ikke på GC2, men på style-filen. Det
 ```json
 {
     "type": "MVT",
-    "url": "https://mit-domæne.dk/styles/geodk.json",
+    "url": "https://mapcentia.github.io/vidi_configs_common/geodk.json",
     "id": "geodk_mvt",
     "name": "GeoDanmark (vektor)",
     "description": "GeoDanmark baggrundskort som vektor-tiles",
@@ -19,15 +19,6 @@ I modsætning til typen `gc2` peger `url` ikke på GC2, men på style-filen. Det
     "maxNativeZoom": 20
 }
 ```
-
-| Egenskab | Betydning |
-|---|---|
-| `type` | Skal være `MVT` |
-| `url` | URL til MapLibre style JSON |
-| `id` | Unikt id for baggrundskortet |
-| `name`/`description` | Vises i baggrundskort-vælgeren |
-| `attribution` | Kildehenvisning |
-| `minZoom`/`maxZoom`/`maxNativeZoom` | Som for de øvrige baggrundskort |
 
 Style-filen kan også pege på helt eksterne vektor-tiles, fx fra MapTiler:
 
@@ -56,7 +47,7 @@ Da stylingen ligger i en separat fil, kan kortets udseende ændres ved blot at o
 
 ## Begrænsninger
 
-* MVT baggrundskort i Vidi bruger altid **web mercator** (grid `g20` i GC2). Et UTM-grid som `25832` (se [Modul 06](../06-Tile-systemer)) kan ikke bruges til MVT i Vidi.
+* MVT baggrundskort i Vidi bruger altid **web mercator** (grid `g20` i GC2). Et UTM-grid som `25832` (se [Modul 03](../03-Tile-systemer)) kan ikke bruges til MVT i Vidi.
 * Der er ingen gennemsigtigheds-skyder på MVT baggrundskort i baggrundskort-vælgeren. Gennemsigtighed styres i style-filen (`fill-opacity` osv.).
 * Labels kræver at `glyphs` er sat i style-filen, og at skrifttypen i `text-font` findes på glyph-serveren.
 
@@ -64,7 +55,6 @@ Da stylingen ligger i en separat fil, kan kortets udseende ændres ved blot at o
 
 - Læg den style-fil, du lavede i Modul 04, et sted hvor den kan hentes (fx GitHub Pages).
 
-- Tilføj MVT-baggrundskortet til din Vidi config ved siden af raster-versionen fra [Modul 02](../02-Vidi-opsaetning):
 
 ```json
 {
@@ -92,7 +82,7 @@ Da stylingen ligger i en separat fil, kan kortets udseende ændres ved blot at o
         },
         {
             "type": "MVT",
-            "url": "https://[bruger].github.io/[repo]/geodk.json",
+            "url": "https://mapcentia.github.io/vidi_configs_common/geodk.json",
             "id": "geodk_mvt",
             "name": "GeoDanmark kort (vektor)",
             "attribution": "&copy; SDFE & MapCentia ApS",

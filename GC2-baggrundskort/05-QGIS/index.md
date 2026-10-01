@@ -8,43 +8,32 @@ Baggrundskortet fra GC2 kan bruges i QGIS på samme måde som i Vidi. QGIS kan h
 | XYZ Tiles | Raster (PNG) | Kun `g20` (web mercator) |
 | Vector Tiles | Vektor (MVT) | `g20` (web mercator) |
 
-Bruger dit QGIS-projekt `EPSG:25832`, er WMTS i grid'et `25832` det bedste valg til raster-tiles. Så skal QGIS ikke omprojicere tiles, og tekster og linjer bliver skarpe (se [Modul 06](../06-Tile-systemer)).
+Bruger dit QGIS-projekt `EPSG:25832`, er WMTS i grid'et `25832` det bedste valg til raster-tiles. Så skal QGIS ikke omprojicere tiles, og tekster og linjer bliver skarpe.
 
 ## WMTS
 
-WMTS er den mest fleksible løsning, fordi QGIS selv læser hvilke tilesets og grids, der findes, i capabilities-dokumentet.
+WMTS er den mest fleksible løsning, fordi QGIS selv læser hvilke tilesets og grids, der findes, i capabilities-dokumentet. MEN QGIS kan kun hente raster-tiles fra WMTS.
 
 1. Vælg `Lag → Tilføj lag → Tilføj WMS/WMTS lag...`
 2. Klik `Ny` og indtast:
    * Navn: `GC2 workshop`
-   * URL: `https://test.admin.gc2.io/mapcache/[database]/wmts/1.0.0/WMTSCapabilities.xml`
+   * URL: `https://test.admin.gc2.io/mapcache/workshop/wmts/1.0.0/WMTSCapabilities.xml`
 3. Klik `Forbind` og vælg fanen `Tilesets`
 4. Find `geodk` i listen. Hvert tileset optræder én gang pr. grid – vælg linjen med tile matrix set `25832` (eller `g20`)
 5. Klik `Tilføj`
 
 QGIS vælger selv det zoom-niveau i grid'et, der passer bedst til den aktuelle målestok.
 
-## XYZ Tiles
-
-XYZ er den hurtigste måde at tilføje et lag i web mercator:
-
-1. Højreklik på `XYZ Tiles` i `Gennemse` (Browser) panelet og vælg `Ny forbindelse...`
-2. Indtast:
-   * Navn: `GeoDanmark (GC2)`
-   * URL: `https://test.admin.gc2.io/mapcache/[database]/gmaps/geodk@g20/{z}/{x}/{y}.png`
-   * Min. zoom: `0`, maks. zoom: fx `20`
-3. Dobbeltklik på forbindelsen for at tilføje laget
-
-Sæt maks. zoom til det højeste niveau, der er seedet eller giver mening. Zoomer man længere ind, forstørrer QGIS blot tiles fra det højeste niveau.
-
 ## Vector Tiles (MVT)
 
-QGIS kan tegne MVT-tiles direkte og kan læse stylingen fra en MapLibre style-fil – den samme, som blev lavet i [Modul 04](../04-MVT-tiles).
+QGIS kan tegne MVT-tiles direkte og kan læse stylingen fra en MapLibre style-fil – den samme, som blev lavet i [Modul 02](../02-MVT-tiles).
+
+QGIS kan kun hente MVT ind i web mercator, men kan reprojektere til EPSG:25832.
 
 1. Højreklik på `Vector Tiles` i `Gennemse` panelet og vælg `Ny generisk forbindelse...`
 2. Indtast:
    * Navn: `GeoDanmark vektor (GC2)`
-   * URL: `https://test.admin.gc2.io/mapcache/[database]/gmaps/geodk.mvt@g20/{z}/{x}/{y}.mvt`
+   * URL: `https://test.admin.gc2.io/mapcache/workshop/gmaps/geodk.mvt@g20/{z}/{x}/{y}.mvt`
    * Min. zoom: `0`, maks. zoom: `20`
    * Style URL: URL til din style-fil, fx `https://[bruger].github.io/[repo]/geodk.json`
 3. Dobbeltklik på forbindelsen for at tilføje laget
@@ -66,10 +55,8 @@ QGIS gemmer også selv tiles i en lokal netværkscache. Er cachen i GC2 ryddet e
 
 ## Øvelse
 
-- Sæt projektets CRS til `EPSG:25832` og tilføj baggrundskortet via WMTS i tile matrix set `25832`.
-
-- Tilføj MVT-udgaven som Vector Tiles med din style-fil fra Modul 04. Hvad bliver oversat korrekt, og hvad ser anderledes ud?
+- Tilføj MVT-udgaven som Vector Tiles med din style-fil fra Modul 02. Hvad bliver oversat korrekt, og hvad ser anderledes ud?
 
 - Brug `Identificer objekter` på vektor-tile laget og find attributterne for en vejmidte.
 
-- Ryd cachen i GC2 for et af lagene (se [Modul 07](../07-Tile-backends)) og se om QGIS henter nye tiles – eller om du først skal rydde QGIS' netværkscache.
+- Sæt projektets CRS til `EPSG:25832`.

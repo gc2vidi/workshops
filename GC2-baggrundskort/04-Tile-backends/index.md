@@ -32,8 +32,8 @@ Vigtigt for baggrundskort: Det sammensmeltede schema-lag (`geodk` og `geodk.mvt`
 Tiles ligger i én fil pr. tileset:
 
 ```
-app/wms/mapcache/sqlite/[database]/geodk.sqlite3
-app/wms/mapcache/sqlite/[database]/geodk.mvt.sqlite3
+app/wms/mapcache/sqlite/workshop/geodk.sqlite3
+app/wms/mapcache/sqlite/workshop/geodk.mvt.sqlite3
 ```
 
 Alle grids (`g20`, `25832` osv.) for tilesettet ligger i den samme fil.
@@ -54,8 +54,8 @@ Ulemper:
 Tiles ligger som almindelige filer i en mappestruktur pr. tileset og grid:
 
 ```
-app/wms/mapcache/disk/[database]/geodk/g20/14/...
-app/wms/mapcache/disk/[database]/geodk.mvt/g20/14/...
+app/wms/mapcache/disk/workshop/geodk/g20/14/...
+app/wms/mapcache/disk/workshop/geodk.mvt/g20/14/...
 ```
 
 Fordele:
@@ -84,10 +84,10 @@ Tiles gemmes som objekter i en S3 bucket. Opsætning af bucket og adgangsnøgler
 Tiles får stien:
 
 ```
-https://[host]/[database]/[tileset]/[grid]/{z}/{x}/{y}/[ext]
+https://[host]/workshop/[tileset]/[grid]/{z}/{x}/{y}/[ext]
 ```
 
-Med `S3 tile set name` i `Tile cache` fanen kan et lag få sin egen sti i bucket'en i stedet for `[database]/[tileset]`. Det er fx nyttigt, når flere databaser skal dele den samme cache.
+Med `S3 tile set name` i `Tile cache` fanen kan et lag få sin egen sti i bucket'en i stedet for `workshop/[tileset]`. Det er fx nyttigt, når flere databaser skal dele den samme cache.
 
 Fordele:
 

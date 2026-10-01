@@ -37,7 +37,7 @@ Bemærk: MVT kan slås fra på serveren. Hvis `mapCache.formats` er sat i GC2's 
 MapCache udstiller tiles gennem flere "services". Til vektor-tiles bruges typisk `gmaps` (XYZ-skema, som MapLibre forventer):
 
 ```
-https://test.admin.gc2.io/mapcache/[database]/gmaps/[tileset]@[grid]/{z}/{x}/{y}.mvt
+https://test.admin.gc2.io/mapcache/workshop/gmaps/[tileset]@[grid]/{z}/{x}/{y}.mvt
 ```
 
 Fx for hele schemaet `geodk` i Google Maps-grid'et `g20`:
@@ -52,7 +52,7 @@ De samme tiles kan også hentes via TMS og WMTS:
 # TMS (bemærk: y-aksen er vendt – brug "scheme": "tms" i style-filen)
 https://test.admin.gc2.io/mapcache/workshop/tms/1.0.0/geodk.mvt@g20/{z}/{x}/{y}.mvt
 
-# WMTS RESTful (bemærk rækkefølgen {y}/{x})
+# WMTS (bemærk rækkefølgen {y}/{x})
 https://test.admin.gc2.io/mapcache/workshop/wmts/1.0.0/geodk.mvt/default/g20/{z}/{y}/{x}.mvt
 ```
 

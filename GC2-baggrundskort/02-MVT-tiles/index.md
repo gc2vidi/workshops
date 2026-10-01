@@ -170,7 +170,7 @@ Vigtigt:
 
 * **Features uden klasse forsvinder.** Har laget klasser, kommer kun features, som matcher mindst én klasse, med i tilen. Husk en opsamlingsklasse, ellers mangler der data
 * **Klasserne gælder også PNG-tiles og WMS.** Det er de samme klasser, som styrer raster-kortet, så udtynding i MVT slår også igennem i raster-udgaven
-* **Ryd MVT-cachen** efter ændringer i klasserne (se [Modul 07](../07-Tile-backends)), ellers bliver de gamle tiles ved med at blive leveret
+* **Ryd MVT-cachen** efter ændringer i klasserne (se [Modul 04](../04-Tile-backends)), ellers bliver de gamle tiles ved med at blive leveret
 
 ### Hvilken målestok har en tile?
 

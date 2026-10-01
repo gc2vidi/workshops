@@ -1,6 +1,8 @@
 # Tile-systemer (grids)
 
-Alle tiles (raster eller vektor) ligger i et tile-system, i MapCache kaldet et "grid". Grid'et bestemmer hvilken projektion tiles er i, og hvordan kortet deles op i zoom-niveauer og tiles. Klient og server skal være enige om grid'et, ellers passer tiles ikke sammen.
+Alle tiles (raster eller vektor) ligger i et tile-system, i MapCache kaldet et "grid". Grid'et bestemmer hvilken projektion tiles er i, og hvordan kortet deles op i zoom-niveauer og tiles. Klient og server skal være enige om grid'et, ellers passer tiles ikke sammen.   
+
+Tiles skabt i et grid kan IKKE anvendes i et andet grid!
 
 ## Et grid består af
 

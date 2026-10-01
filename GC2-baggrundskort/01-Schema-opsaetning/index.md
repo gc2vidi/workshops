@@ -6,7 +6,7 @@ Bemærk:
 
 * Datasættet extent.shp skal ikke styles eller behøves opsætning af nogen art. Dette lag skal bruges til at afgrænse seeding af tiles. Dette lag placeres typisk i et andet schema.
 
-* De enkelte lags opsætning i `Tile cache` fanen har ingen betydning for det sammensmeltet baggrundskort. Den ny'GC2-app har indstillinger for schemaers tile-opsætning.
+* De enkelte lags opsætning i `Tile cache` fanen har ingen betydning for det sammensmeltet baggrundskort. Den nye GC2-app har indstillinger for schemaers tile-opsætning.
 
 ## Sorting i et baggrundskort
 
@@ -14,7 +14,7 @@ De enkelte lag i baggrundskortet sammenlægges i den rækkefølge, som `sort_id`
 
 ## Sletning af cache
 
-Sletning af cachen for tiles sker ved klik på `Ryd tile cache` i Database-fanen.
+Sletning af cachen for tiles sker ved klik på `Ryd tile cache` i Database-fanen. Den nye GC2-app har bedre muligheder for at slette cache.
 
 ## Nyttige instillinger (Gælder kun MapServer)
 

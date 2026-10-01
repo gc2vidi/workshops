@@ -6,7 +6,7 @@ GC2 giver mulighed for at lave egne baggrundskort bestående af en række lag, d
 
 For at kunne gennemføre denne workshop kræves adgang til GC2/Vidi med flere lag, som skal udgøre baggrundskortet.
 
-Du kan anvende denne [GC2/Vidi installation](https://test.admin.gc2.io/) hvor du kan logge ind i databasen `workshop`, skabe et nyt schema og uploade fem datasæt, som kan hentes [her](https://github.com/mapcentia/workshops/raw/main/GC2-baggrundskort/data/data.zip)
+Du kan anvende denne [GC2/Vidi installation](https://test.admin.gc2.io/) hvor du kan logge ind i databasen `workshop`, skabe et nyt schema og uploade fem datasæt, som kan hentes [her](https://github.com/gc2vidi/workshops/blob/main/GC2-baggrundskort/data/data.zip)
 
 Dataene skal unzippes før upload.
 
